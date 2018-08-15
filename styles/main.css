@@ -1,10 +1,15 @@
 div {
     border-color: #000000;
-
 }
 body {
-    background-color: red;
+    background-color: #99ddff;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+img {
+    height: 300px;
+    border: 2px solid black;
+    padding: 5px;
 }
 
 a {
@@ -31,8 +36,6 @@ h1, h2, h3, p {
 }
 
 #content {
-    border-color: red;
-    border-width: 3px;
     background-color: #aa55cc;
     padding: 10px 25px 30px 20px;
 }
@@ -47,7 +50,8 @@ h1, h2, h3, p {
     list-style-type: none;
     padding: 10px;
 }
-.selected {
+
+#nav .selected {
     font-weight: bold;
     color: #334433;
 }
@@ -64,3 +68,9 @@ h1, h2, h3, p {
     text-align: right;
     font-size: 10pt;
 }
+
+.profile-pic {
+    height: 120px;
+    padding: 0;
+}
+
