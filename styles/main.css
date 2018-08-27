@@ -1,5 +1,6 @@
-div {
-    border-color: #000000;
+
+div, section {
+    /* border: 1px solid red !important; */
 }
 body {
     background-color: #99ddff;
@@ -22,6 +23,7 @@ h1, h2, h3, p {
 }
 
 #container {
+    /*display: grid;*/
     background-color: #ffffff;
     margin-left: auto;
     margin-right: auto;
@@ -42,8 +44,18 @@ h1, h2, h3, p {
 
 #nav {
     background-color: #ddeecc;
-    width: 20%;
+    width: 18%;
     float: left;
+}
+
+.nav-title {
+    /*border: 3px solid blue;*/
+    /* position: relative; */
+    transform: rotate(-90deg);
+}
+
+.nav-items {
+    /* position: relative; */
 }
 
 #nav ul {
@@ -57,7 +69,7 @@ h1, h2, h3, p {
 }
 #main {
     background-color: #ffccaa;
-    width: 80%;
+    width: 75%;
     float: right;
 }
 
