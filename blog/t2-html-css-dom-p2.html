@@ -1,19 +1,111 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
+
 <head>
+    <!-- <meta http-equiv="Content-Type" content="text/html; charset=windows-1252"> -->
+
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>T2 HTML, CSS, DOM, Bootstrap</title>
+    <title>T2 Post Part 2 of 2 - Peter Torr Smith</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
     <link rel="stylesheet" type="text/css" media="screen" href="../css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="../css/bootstrap-theme.min.css" />
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="../css/bootstrap-theme.min.css" /> -->
     <link rel="stylesheet" type="text/css" media="screen" href="../css/styles.css" />
+    <!-- <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Indie+Flower&amp;subset=latin-ext" rel="stylesheet"> -->
 
-    <script src="../js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&amp;subset=latin-ext" rel="stylesheet">
+
     <script src="../js/jquery-3.3.1.min.js"></script>
-
+    <script src="../js/bootstrap.min.js"></script>
 </head>
+
 <body>
-    
+    <!-- <div class="container-fluid"> -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 home-logo">
+                <img src="../images/PeterTorrSmithColour-250px-width.jpg" alt="Peter Torr Smith profile" class="img-responsive" data-toggle="modal"
+                    data-target="#modal-01-PTS">
+            </div>
+
+            <div class="col-md-6 text-right">
+                <h1 class="page-title">Learnings of Grid layouts, Responsive design, HTML Semantics, Bootsrap and JQuery,
+                    and more</h1>
+            </div>
+
+
+
+            <div class="col-md-4 text-right">
+                <div class="page-title-main">Peter Torr Smith</div>
+                <div class="page-title-subtitle">T2 Blog Part 2 of 2</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 nav">
+                <h3 class="home-link"><a href="../index.html">Home</a></h3>
+                <ul class="list">
+                    <li class="list-item"> <a href="#grid-design">Grid based design</a> </li>
+                    <li class="list-item"> <a href="#responsive-design">Responsive Design</a> </li>
+                    <li class="list-item"> <a href="#semantics">HTML Semantics</a> </li>
+                    <li class="list-item"> <a href="#other-learnings">Other learnings and interests</a> </li>
+                </ul>
+
+            </div>
+            <div class="col-md-9 article">
+                <section>
+                    <h2 id="grid-design">Grid Based Design</h2>
+                    <p>Laying out page elements in rows divided using a 12 column grid system.</p>
+                </section>
+                <section>
+                    <h2 id="responsive-design">Responsive and adaptive Design</h2>
+                    <p>Design pages so they adapt both the size of elements like images and fonts, but also the relative
+                        location of the elements, or more often the boxes the contents are in.</p>
+                </section>
+                <section>
+                    <h2 id="semantics">HTML Semantics - what the page content means, not how it looks</h2>
+                    <p>This is writing HTML so it describes the meaning and relationships and hierarchy of the page contents,
+                        and not the look and feel of those elements. </p>
+                </section>
+                <section>
+                    <h2 id="other-learnings">Other Learnings - Bootstrap and JQuery</h2>
+                    <p>Bootstrap is a collection of CSS styles and JavaScript functions that we can use to layout and style
+                        our page and manage common user interactions such as pop-up "lightbox" images.</p>
+                    <p>JQuery is another helper JavaScript library to help with visual user interactions.  Bootstrap relies on JQuery for many of its advance UI behaviours. 
+                        As such, it is important that when both these libraries are linked to in the "head" section of a page, the JQueary script tag is prior to the Bootstrap script tag</p>
+<div class="image"><img src="../images/JQueryBeforeBootstrapJSHeadTags.png" alt="Bootstap needs JQuery so the JQuery script tag in the head must be prior to the Bootstrap script tag" class="img-responsive" ></div>
+                    
+                </section>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+    <!-- Modal 01 PTS -->
+    <div class="modal fade" id="modal-01-PTS" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Peter Torr Smith</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="../images/PeterTorrSmithColour-250px-width.jpg" alt="Peter Torr Smith mugshot">
+                    <p>contact me at <a href="mailto:peter@ptorrsmith.com">peter@ptorrsmith.com</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Sure will!</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
+
 </html>

@@ -1,31 +1,49 @@
 div {
-    border: dashed 0.5px lightskyblue;
+    /* border: dashed 0.5px lightskyblue; */
 }
 
 body {
-    font-family: 'Alfa Slab One', cursive;
     font-family: 'Indie Flower', cursive;
-    font-size: 2em;
+    font-size: 1.5em;
+    padding:3em;
 }
-
-
-.home-logo {
-    width: 80px;
-}
-
-.page-title-main {
-    font-family: 'Alfa Slab One', cursive;
-    font-weight: 200;
-    font-size: 3em;
-}
-
 h1 {
+    font-family: 'Indie Flower', cursive;
+    font-weight:bold;
+    /* font-size: 0.5em; */
+}
+
+h2 {
     font-family: 'Alfa Slab One', cursive;
         /* transform: rotate(-70deg);
         position: absolute;
         left: 0; */
 }
 
+.home-logo {
+    width: 120px;
+}
+
+
+.page-title {
+    /* font-family: 'Indie Flower', cursive; */
+    font-weight: 800;
+    color:indigo;
+}
+
+.page-title-main {
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: 400;
+    font-size: 2em;
+}
+
+.page-title-subtitle {
+    font-family: 'Indie Flower', cursive;
+    font-weight: 100;
+    font-size: 2em;
+}
+
 .link {
     text-decoration-line: underline;
 }
+
