@@ -43,6 +43,14 @@ h2 {
     font-size: 2em;
 }
 
+.main-nav-link {
+    color: indigo;
+}
+
+.main-nav-link-current {
+     background-color: yellow;
+}
+
 .link {
     text-decoration-line: underline;
 }
