@@ -79,17 +79,17 @@
                     <h2 id="analogy">HTML, CSS &amp; DOM Analogy</h2>
                     <p>
                         HTML is the basic structure and semantics ("Meaning") of the content. Like the frame and dividers in a window. And the quote
-                        and the psalm reference in a stained glass paenl.
+                        and the psalm reference in a stained glass pane.
                     </p>
                     <p>
                         CSS overlays styles on those elements, and can move them around relative to each other. Like the colour and opacity of the
-                        glass top panel, the text-size of the quote, the font of the psalm reference and the material and
+                        glass top pane, the text-size of the quote, the font of the psalm reference and the material and
                         width of the frame.
                     </p>
                     <p>
                         The DOM is the model of "objects" with "Properties" which is created by the browser based on the HTML and CSS. This allows
                         us to remotely control any of the elements' properties during and after the window is built. Like
-                        being able to remotely swap-out the image a the stained glass panel, or make one of the windows slide
+                        being able to remotely swap-out the image in a the stained glass pane, or make one of the windows slide
                         open.
                     </p>
                 </section>
@@ -97,10 +97,10 @@
                     <h2 id="boxifying">What is Boxifying</h2>
                     <p>
                         Boxifying is imaginging the layout of a web page to be a series of boxes or rectangles inside, beside and below each other.
-                        Sometimes imagining a 12x12 grid is useful, allowing us to partition a page into 1, 2, 3, 4 or 6
-                        columns.
+                        Sometimes imagining a 12 column grid is useful, allowing us to partition a page into 1, 2, 3, 4 or 6
+                        columns just by specifying how many columns of the 12 we want for each cell.
                     </p>
-                    <p>Rows may have columns, and these cells may have yet further divs or headings that can also be layed
+                    <p>Rows have 1-12 columns, and their cells may have yet further divs or headings that can also be layed
                         out in boxes.</p>
                 </section>
 
@@ -108,9 +108,12 @@
                     <h2 id="box-model">The Box Model</h2>
                     <p>
                         The box model is using HTML to define those "boxes" where content lives... more like borderless flexible rectangles, often
-                        in rows and columns, and rectangles within rectangles, and then using CSS to define the margin outside
-                        the box, the border if desired, the padding inside the box, and the overall height and/or width of
+                        in rows and columns, and rectangles within rectangles, and then using CSS to define any margin outside
+                        the box, any border details if desired, the padding inside the box, and the overall height and/or width of
                         the box or its contents.
+                    </p>
+                    <p>It is however common to delegate much of the box model properties down to the CSS class definitions, instead of predefining it in the HTML tag attributes. 
+                        This I expect is a judgement of what is semantic definitions and what are style definitions.
                     </p>
                 </section>
             </div>
