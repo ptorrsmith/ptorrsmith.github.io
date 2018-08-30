@@ -22,13 +22,14 @@ h1, h2, h3, p {
     margin: 5px;
 }
 
-#container {
-    /*display: grid;*/
+/* no longer used... using .container-fluid class on page container div to support bootstrap full-width fluid to adapt to viewport width */
+/* #container {
+    display: grid;
     background-color: #ffffff;
     margin-left: auto;
     margin-right: auto;
     clear: both;
-}
+} */
 
 #header {
     background-color: #38bad1;

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!-- <meta http-equiv="Content-Type" content="text/html; charset=windows-1252"> -->
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="../css/bootstrap-theme.min.css" /> -->
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/styles.css" />
+    <!-- <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Indie+Flower&amp;subset=latin-ext" rel="stylesheet"> -->
+
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&amp;subset=latin-ext" rel="stylesheet">
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- <div class="container-fluid"> -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="../images/PeterTorrSmithColour-250px-width.jpg" alt="Peter Torr Smith profile" class="img-responsive home-logo"
+                    data-toggle="modal" data-target="#modal-01-PTS"></div>
+            <div class="col-md-6 text-right">
+                <div class="page-title-main">Peter Torr Smith</div>
+                <div class="page-title-subtitle">T2 Blog - learnings of the DOM, HTML, CSS, Grid, Bootsrap and JQuery</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 nav">
+                <h3 class="home-link"><a href="../index.html">Home</a></h3>
+                <ul class="list">
+                    <li class="list-item"> <a href="#design-wishlist">Design Wishlist</a> </li>
+                    <li class="list-item"> <a href="#analogy">Web page analogy</a> </li>
+                    <li class="list-item"> <a href="#boxifying">Boxifying</a> </li>
+                    <li class="list-item"> <a href="#box-model">The Box Model</a> </li>
+                </ul>
+
+            </div>
+            <div class="col-md-9 article">
+                <section>
+                    <h1 id="design-wishlist">Design Wishlist</h1>
+                    <p>Design and structural features I liked that I may want to use in my designs next sprint.</p>
+                    <ul class="list">
+                        <li class="list-item"> Responsive design </li>
+                        <li class="list-item"> Bootstrap </li>
+                        <li class="list-item"> Rotated Text </li>
+                        <li class="list-item"> Grid and flex-box mixed </li>
+                        <li class="list-item">Left nav panel over several rows</li>
+                        <li class="list-item">A couple of interesting Fonts</li>
+                        <li class="list-item"> Rotated Text </li>
+                        <li class="list-item"> Menus from unordered list </li>
+                        <li class="list-item"> Semantic markup and sectioning </li>
+                        <li class="list-item">Background images and colours</li>
+                        <li class="list-item">a modal like <span class="link" data-toggle="modal" data-target="#modal-01-PTS">this</span>
+                            when you click on my photo in the banner ;-)</li>
+                    </ul>
+                </section>
+                <section>
+                    <h1 id="analogy">HTML, CSS &amp; DOM Analogy</h1>
+                    <p>
+                        HTML is the basic structure and semantics ("Meaning") of the content. Like the frame and dividers in a window. And the quote
+                        and the psalm reference in a stained glass paenl.
+                    </p>
+                    <p>
+                        CSS overlays styles on those elements, and can move them around relative to each other. Like the colour and opacity of the
+                        glass top panel, the text-size of the quote, the font of the psalm reference and the material and
+                        width of the frame.
+                    </p>
+                    <p>
+                        The DOM is the model of "objects" with "Properties" which is created by the browser based on the HTML and CSS. This allows
+                        us to remotely control any of the elements' properties during and after the window is built. Like
+                        being able to remotely swap-out the image a the stained glass panel, or make one of the windows slide
+                        open.
+                    </p>
+                </section>
+                <section>
+                    <h1 id="boxifying">What is Boxifying</h1>
+                    <p>
+                        Boxifying is imaginging the layout of a web page to be a series of boxes or rectangles inside, beside and below each other.
+                        Sometimes imagining a 12x12 grid is useful, allowing us to partition a page into 1, 2, 3, 4 or 6
+                        columns.
+                    </p>
+                    <p>Rows may have columns, and these cells may have yet further divs or headings that can also be layed
+                        out in boxes.</p>
+                </section>
+
+                <section>
+                    <h1 id="box-model">The Box Model</h1>
+                    <p>
+                        The box model is using HTML to define those "boxes" where content lives... more like borderless flexible rectangles, often in rows and columns, and rectangles within rectangles, and then using CSS to define the margin outside the box, the border if desired, the padding inside the box, and the overall height and/or width of the box or its contents.
+                    </p>
+               </section>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+    <!-- Modal 01 PTS -->
+    <div class="modal fade" id="modal-01-PTS" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Peter Torr Smith</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="../images/JQueryBeforeBootstrapJSHeadTags.png" alt="Showing that the JQuery Head script tag declaration must be before the bootstrap head script tag"> <p>I learned that the
+                        JQuery script head tag needs to be before the bootstrap script tag</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>

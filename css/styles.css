@@ -1,0 +1,31 @@
+div {
+    border: dashed 0.5px lightskyblue;
+}
+
+body {
+    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Indie Flower', cursive;
+    font-size: 2em;
+}
+
+
+.home-logo {
+    width: 80px;
+}
+
+.page-title-main {
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: 200;
+    font-size: 3em;
+}
+
+h1 {
+    font-family: 'Alfa Slab One', cursive;
+        /* transform: rotate(-70deg);
+        position: absolute;
+        left: 0; */
+}
+
+.link {
+    text-decoration-line: underline;
+}
