@@ -52,7 +52,7 @@ h1, h2, h3, p {
 .nav-title {
     /*border: 3px solid blue;*/
     /* position: relative; */
-    transform: rotate(-90deg);
+    /* transform: rotate(-90deg); */
 }
 
 .nav-items {
