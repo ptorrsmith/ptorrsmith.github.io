@@ -12,16 +12,19 @@ div, header, nav, section, article, aside, nav, footer, main, .container {
     max-width: 2000px;
 }
 
-
-/* HEADER */
-.header {
+/* PAGE */
+.page {
 
 }
-
 
 /* CONTAINER */
 
 .container {
+
+}
+
+/* HEADER */
+header, .header {
 
 }
 
