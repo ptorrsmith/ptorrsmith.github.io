@@ -9,7 +9,7 @@ div, header, nav, section, article, aside, nav, footer, main, .container {
 /* SHARED  */
 
 .container {
-    max-width: 2000px;
+    max-width: 960px;
 }
 
 /* PAGE */
@@ -26,6 +26,10 @@ div, header, nav, section, article, aside, nav, footer, main, .container {
 /* HEADER */
 header, .header {
 
+}
+
+.logo {
+    max-height: 20px;
 }
 
 
