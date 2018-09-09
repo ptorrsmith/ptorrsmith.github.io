@@ -1,11 +1,207 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title></title>
-    <meta charset="UTF-8">
-    
-  </head>
-  <body>
-  
-  </body>
+<html lang="en">
+
+<head>
+  <!-- BASIC NEEDS -->
+  <meta charset="UTF-8">
+  <title>P Torr's GitHub site</title>
+  <meta name="author" content="Peter Torr Smith">
+  <meta name="description" content="home page for Peter Torr Smith's Enspiral Dev Academy journey">
+
+
+  <!-- MOBILE NEEDS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <!-- FONT -->
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+
+
+  <!-- STYLES -->
+
+  <!-- Normalize and Skeleton styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+
+  <!-- Our own "Mobile First" custom styles to override as needed and set responsive styles -->
+  <link rel="stylesheet" href="styles/main.css">
+
+
+  <!-- SCRIPTS -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+  <!-- FAVICON -->
+  <link rel="icon" href="//www.hirethings.co.nz/favicon.ico" type="image/gif">
+
+
+</head>
+
+<body>
+
+  <!-- main page layout -->
+
+  <!-- not sure if need to wrap the page in a container -->
+  <!-- Is this div effectively the same as body ? -->
+  <div class="page container header">
+
+    <!-- use of <header> tag good here? Could've just been a <section> -->
+    <header class="section header container">
+      <div class="logo">
+        <img src="images/PeterTorrSmithColour-300px-width.jpg" alt="Peter Torr Smith colour photo" class="u-max-width">
+      </div>
+      <div class="site-title">
+        <h1>Peter Torr Smith</h1>
+        <h3>Enspiral Dev Academy - Hihi 2019</h3>
+      </div>
+    </header>
+
+    <nav class="container">Menu</nav>
+
+    <section class="site-quote section container">
+      <blockquote cite="#">
+        <p>Something inspirational or grounding this way comes</p>
+        <cite>
+          Anonymous
+        </cite>
+      </blockquote>
+    </section>
+
+    <section class="hero container">
+      <div class="promo-pair container">
+        <div class="promo-nav container" url="Blog/blog-index.html">
+          <a href="blog/blog-index.html"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
+          <h2>Blog</h2>
+          <h4>Tech, Cultural and Reflective Ramblings</h4>
+        </div>
+        <div class="promo-nav container" url="Blog/blog-index.html">
+          <a href="projects/projects-index.html"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
+          <h2>Projects</h2>
+          <h4>My project workspace</h4>
+        </div>
+      </div>
+      <div class="promo-pair container">
+        <div class="promo-nav container" url="Blog/blog-index.html">
+          <a href="random/random-index.html"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
+          <h2>Random Resources</h2>
+          <h4>Useful links and snippets</h4>
+        </div>
+        <div class="promo-nav container" url="Blog/blog-index.html">
+          <a href="history/history-index.html"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
+          <h2>History</h2>
+          <h4>People, Places, Projects, Profession, Play</h4>
+        </div>
+      </div>
+    </section>
+
+    <section class="features container">
+      <div class="container latest">
+        <h2>Latest</h2>
+        <div class="latest-promo container">
+          <a href="#"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
+          <h4><a href="#">The Latest Greatest Thing</a></h4>
+          <p>Summary/intro to Article, Blog, Project, History or Random<br>
+            Perhaps spread over a few lines.</p>
+        </div>
+        <div class="latest-promo container">
+          <a href="#"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
+          <h4><a href="#">The Latest Greatest Thing</a></h4>
+          <p>Summary/intro to Article, Blog, Project, History or Random<br>
+            Perhaps spread over a few lines.</p>
+        </div>
+        <div class="latest-promo container">
+          <a href="#"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
+          <h4><a href="#">The Latest Greatest Thing</a></h4>
+          <p>Summary/intro to Article, Blog, Project, History or Random<br>
+            Perhaps spread over a few lines.</p>
+        </div>
+        <div class="latest-promo container">
+          <a href="#"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
+          <h4><a href="#">The Latest Greatest Thing</a></h4>
+          <p>Summary/intro to Article, Blog, Project, History or Random<br>
+            Perhaps spread over a few lines.</p>
+        </div>
+      </div>
+      <div class="recent container">
+        <h2>Recent Stuff</h2>
+        <div class="-promo container">
+          <a href="#"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
+          <h4><a href="#">A Recent Thing</a></h4>
+          <p>Shorter Summary/intro to Article, Blog, Project, History or Random</p>
+        </div>
+        <div class="-promo container">
+          <a href="#"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
+          <h4><a href="#">A Recent Thing</a></h4>
+          <p>Shorter Summary/intro to Article, Blog, Project, History or Random</p>
+        </div>
+        <div class="recent-promo container">
+          <a href="#"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
+          <h4><a href="#">A Recent Thing</a></h4>
+          <p>Shorter Summary/intro to Article, Blog, Project, History or Random</p>
+        </div>
+        <div class="recent-promo container">
+          <a href="#"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
+          <h4><a href="#">A Recent Thing</a></h4>
+          <p>Shorter Summary/intro to Article, Blog, Project, History or Random</p>
+        </div>
+        <div class="recent-promo container">
+          <a href="#"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
+          <h4><a href="#">A Recent Thing</a></h4>
+          <p>Shorter Summary/intro to Article, Blog, Project, History or Random</p>
+        </div>
+        <div class="recent-promo container">
+          <a href="#"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
+          <h4><a href="#">A Recent Thing</a></h4>
+          <p>Shorter Summary/intro to Article, Blog, Project, History or Random</p>
+        </div>
+        <div class="recent-promo container">
+          <a href="#"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
+          <h4><a href="#">A Recent Thing</a></h4>
+          <p>Shorter Summary/intro to Article, Blog, Project, History or Random</p>
+        </div>
+        <div class="recent-promo container">
+          <a href="#"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
+          <h4><a href="#">A Recent Thing</a></h4>
+          <p>Shorter Summary/intro to Article, Blog, Project, History or Random</p>
+        </div>
+        <div class="recent-promo container">
+          <a href="#"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
+          <h4><a href="#">A Recent Thing</a></h4>
+          <p>Shorter Summary/intro to Article, Blog, Project, History or Random</p>
+        </div>
+        <div class="show-more">
+          <a href="#">more...</a>
+        </div>
+      </div>
+
+      <!-- /features -->
+    </section>
+
+    <section class="bottom-nav static bottom right">
+      <a href="#">Back to Top</a>
+    </section>
+
+    <section class="pre-footer container">
+      <div class="container">an optional pre-footer space</div>
+    </section>
+    <footer>
+      <div class="row">
+        <div class="column three left">Peter Torr Smith</div>
+        <div class="column three center">
+          <span class="facebook">f</span>
+          <span class="twitter">t</span>
+        </div>
+        <div class="column three left">
+          <!-- should this be a span or a p tag?? -->
+          <span>&copy; 2018</span>
+        </div>
+      </div>
+
+    </footer>
+
+
+  </div>
+
+</body>
+
 </html>

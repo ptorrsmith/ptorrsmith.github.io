@@ -1,0 +1,46 @@
+/* debug */
+/* 
+div, header, nav, section, article, aside, nav, footer, main, .container {
+    border: 1px solid red;
+    background-color: aquamarine;
+} */
+
+
+/* SHARED  */
+
+.container {
+    max-width: 2000px;
+}
+
+
+/* HEADER */
+.header {
+
+}
+
+
+/* CONTAINER */
+
+.container {
+
+}
+
+
+/* SECTIONS */
+
+
+.section {
+    padding: 7rem 0 6rem;
+    text-align: center;
+}
+
+
+
+.site-quote {
+
+}
+
+.hero {
+
+}
+
