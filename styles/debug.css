@@ -1,0 +1,22 @@
+/* debug */
+
+div {
+    border: 1px solid red;
+}
+
+header, nav, section, article, aside, nav, main, footer, main {
+    border: 2px solid yellow;
+}
+
+.row {
+    border: 3px solid orchid;
+}
+
+.logo img {
+    border: 2px solid green;
+}
+
+.column, .columns {
+    border: 2px solid purple;
+}
+
