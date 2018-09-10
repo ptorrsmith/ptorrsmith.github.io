@@ -23,31 +23,56 @@ img {
 
 /* PAGE */
 .page {
-
+    background-color: bisque;
 }
+
 
 /* CONTAINER */
 
 .container {
-
+    /* max-width: 960px; */
 }
 
 /* HEADER */
 .header {
-    background-color: darkorange;
+    /* background-color: darkorange; */
 }
 
 .header .menu {
     text-align:center;
 }
 
-.logo {
+.index .logo {
     max-height: 200px;   
 }
 
-nav li {
+.content-index .logo {
+    max-height: 150px;
+}
+
+nav {
+    margin-top: 10px;
+}
+nav ul {
     list-style: none;
-    display: inline-block;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    /* border: 1px solid lightgrey;
+    margin: 0px;
+    padding: 5px; */
+    padding: 5px;
+    border: 1px solid lightgrey;
+    margin: 0;
+
+}
+nav li .current {
+    /* border: 1px solid grey; */
+    background-color: lightgray;
 }
 
 a {
@@ -67,13 +92,13 @@ a {
 /* SITE-QUOTE */
 
 .site-quote {
-    background-color: lightskyblue;
+    /* background-color: lightskyblue; */
 }
 
 
 /* HERO */
 .hero {
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 }
 
 .hero img {
@@ -93,10 +118,77 @@ a {
 }
 
 
+/* CONTENT */
+
+.content h2 {
+    font-size: 2.8rem;
+}
+
+.content h3 {
+    font-size: 2rem;
+}
+
+.content h4 {
+    font-size: 1.8rem;
+}
+
+.content h5 {
+    display: inline;
+    font-size: 1.6rem;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.content ul.tags {
+    list-style: none;
+    /* display: inline-block; */
+    text-align: right;
+    margin-right: 10px;
+    display: inline;
+}
+
+.content .tags li {
+    display: inline;
+    /* font-size: 1em; */
+}
+
+.content .tags li a {
+    /* font-size: 1.1em; */
+}
+
+
+.content h5.tag-heading {
+    /* NOT SURE WHY CANT USE THIS SELECTOR!! */
+    /* text-align: right; */
+}
+
+.content-body {
+    padding-top: 10px;
+    padding-bottom: 10px
+}
+
+.content aside {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-style: italic;
+}
+
+
+/* RELATED CONTENT PROMO */
+
+.related-item img {
+    max-height: 80px;
+}
+
+.related .show-more {
+    text-align: right;
+}
+
+
 /* FEATURES */
 
 .features {
-    background-color: mediumslateblue;
+    /* background-color: mediumslateblue; */
 }
 
 .features img {
@@ -130,16 +222,16 @@ a {
 /* BOTTOM NAV */
 
 .bottom-nav {
-    background-color: bisque;
+    /* background-color: bisque; */
 }
 
 /* FOOTER */
 .pre-footer {
-    background-color: darkcyan;
+    /* background-color: darkcyan; */
 }
 
 .footer {
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 
 

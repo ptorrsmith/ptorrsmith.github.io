@@ -25,7 +25,7 @@
 
   <!-- Our own "Mobile First" custom styles to override as needed and set responsive styles -->
   <link rel="stylesheet" href="styles/main.css">
-  <link rel="stylesheet" href="styles/debug.css">
+  <!-- <link rel="stylesheet" href="styles/debug.css"> -->
 
 
 
@@ -45,9 +45,8 @@
 
   <!-- not sure if need to wrap the page in a container -->
   <!-- Is this div effectively the same as body ? -->
-  <!-- No, as the .container class will apply a max-width, but not to body -->
+  <!-- yes, but if included the class=container then the .container class will apply a max-width, but not to body  -->
   <div class="page index">
-
     <!-- use of <header> tag good here? Could've just been a <section> or a <div> -->
     <!-- assuming applying class of row to header is ok for Skeleton -->
     <header class="section header container">
@@ -61,10 +60,10 @@
         </div>
       </div>
       <nav class="row menu">
-        <h3>Menu</h3>
+        <!-- <h3>Menu</h3> -->
         <ul>
           <li>
-            <a href="#">Home</a>
+            <a href="index.html" class="current">Home</a>
           </li>
           <li>
             <a href="blog/blog-index.html">Blogs</a>
@@ -96,9 +95,9 @@
     <section class="hero container">
       <div class="row">
         <div class="promo-nav three columns">
-            <a href="blog/blog-index.html"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text" class="u-max-full-width"></a>
-            <h3>Blog</h3>
-            <h4>Tech, Cultural and Reflective Ramblings</h4>
+          <a href="blog/blog-index.html"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text" class="u-max-full-width"></a>
+          <h3>Blog</h3>
+          <h4>Tech, Cultural and Reflective Ramblings</h4>
         </div>
         <div class="promo-nav three columns">
           <a href="projects/projects-index.html"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"
@@ -130,24 +129,28 @@
             <h4><a href="blog/blog-template.html">The Latest Greatest Thing</a></h4>
             <p>Summary/intro to Article, Blog, Project, History or Random<br>
               Perhaps spread over a few lines.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, totam accusamus.</p>
           </div>
           <div class="latest-promo">
             <a href="blog/blog-template.html"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
             <h4><a href="blog/blog-template.html">The Latest Greatest Thing</a></h4>
             <p>Summary/intro to Article, Blog, Project, History or Random<br>
               Perhaps spread over a few lines.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, totam accusamus.</p>
           </div>
           <div class="latest-promo">
             <a href="blog/blog-template.html"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
             <h4><a href="blog/blog-template.html">The Latest Greatest Thing</a></h4>
             <p>Summary/intro to Article, Blog, Project, History or Random<br>
               Perhaps spread over a few lines.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, totam accusamus.</p>
           </div>
           <div class="latest-promo">
             <a href="blog/blog-template.html"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
             <h4><a href="blog/blog-template.html">The Latest Greatest Thing</a></h4>
             <p>Summary/intro to Article, Blog, Project, History or Random<br>
               Perhaps spread over a few lines.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, totam accusamus.</p>
           </div>
         </div>
         <div class="one-half column recent ">
@@ -205,29 +208,29 @@
       <!-- /features -->
     </section>
 
+    <!-- FOOTER COMMON -->
+
     <section class="bottom-nav static bottom right container">
       <a href="#">Back to Top</a>
     </section>
 
     <section class="pre-footer container">
-      <div class="row">
-        <div class="container">an optional pre-footer space</div>
-      </div>
+      <div>an optional pre-footer space</div>
     </section>
-    <footer class="footer container">
+    <footer class="container">
       <div class="row">
-        <div class="one-third column">Peter Torr Smith</div>
-        <div class="one-third column">
+        <div class="five columns">Peter Torr Smith</div>
+        <div class="four columns">
           <span class="facebook">f</span>
           <span class="twitter">t</span>
         </div>
-        <div class="one-third column">
+        <div class="three columns">
           <!-- should this be a span or a p tag?? -->
           <span>&copy; 2018</span>
         </div>
       </div>
-    </footer>
 
+    </footer>
 
   </div>
 
