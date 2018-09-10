@@ -6,15 +6,28 @@
 } */
 
 
+/* BASE STYLES */
+
 
 /* SHARED  */
 
+
+
 body {
-    /* background-color: black; */
+    font-size: 1.4rem; 
+} /* =14px */
+
+h1   {
+    font-size: 2.4rem; 
+} /* =24px */
+
+h2 {
+    font-size: 2rem;
 }
 
 img {
-    border: solid white .6rem;
+    /* max-height: 50px; */
+    /* border: solid white .6rem; */
 
 }
 
@@ -52,7 +65,7 @@ img {
 }
 
 .content .logo {
-    max-height: 95px;
+    max-height: 55px;
 }
 
 nav {
@@ -72,6 +85,7 @@ nav a {
     margin: 0;
 
 }
+
 nav li .current {
     /* border: 1px solid grey; */
     background-color: lightgray;
@@ -251,16 +265,46 @@ there.
 
 
 /* Larger than mobile */
-@media (min-width: 400px) {}
+@media (min-width: 400px) {
+    body { font-size: 1.5rem; } 
+    h1   { font-size: 2.6rem; } 
+    .content .logo {
+        max-height: 65px;
+    }
+    
+}
 
 /* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {}
+@media (min-width: 550px) {
+    body { font-size: 1.7rem; } 
+    h1   { font-size: 2.8rem; } 
+    .content .logo {
+        max-height: 125px;
+    }
+}
 
 /* Larger than tablet */
-@media (min-width: 750px) {}
+@media (min-width: 750px) {
+    body { font-size: 1.9rem; } 
+    h1   { font-size: 3rem; } 
+    .content .logo {
+        max-height: 145px;
+
+}
 
 /* Larger than desktop */
-@media (min-width: 1000px) {}
+@media (min-width: 1000px) {
+    body { font-size: 2.1rem; } 
+    h1   { font-size: 3.3rem; } 
+    .content .logo {
+        max-height: 165px;
+
+}
 
 /* Larger than Desktop HD */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    body { font-size: 2.4rem; } 
+    h1   { font-size: 3.8rem; } 
+    .content .logo {
+        max-height: 200px;
+}
