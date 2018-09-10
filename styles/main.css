@@ -1,12 +1,21 @@
-/* debug */
-/* 
-div, header, nav, section, article, aside, nav, footer, main, .container {
-    border: 1px solid red;
-    background-color: aquamarine;
+/* Do I need to add this or is it in Skeleton or Normalize??? */
+/* * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 } */
 
 
+
 /* SHARED  */
+
+body {
+    background-color: black;
+}
+
+img {
+
+}
 
 .container {
     max-width: 960px;
@@ -24,30 +33,137 @@ div, header, nav, section, article, aside, nav, footer, main, .container {
 }
 
 /* HEADER */
-header, .header {
+.header {
+    background-color: darkorange;
+}
 
+.header .menu {
+    text-align:center;
 }
 
 .logo {
-    max-height: 20px;
+    max-height: 200px;   
 }
+
+nav li {
+    list-style: none;
+    display: inline-block;
+}
+
+a {
+    color:inherit;
+}
+
 
 
 /* SECTIONS */
 
 
 .section {
-    padding: 7rem 0 6rem;
+
+}
+
+
+/* SITE-QUOTE */
+
+.site-quote {
+    background-color: lightskyblue;
+}
+
+
+/* HERO */
+.hero {
+    background-color: aquamarine;
+}
+
+.hero img {
+    max-width: 30px;
+    padding: 5px;
+}
+
+.hero h3 {
+    font-size: 2rem;
+    display: inline-block;
+    text-align: center;
+}
+
+.hero h4 {
+    font-size: 1.5rem;
     text-align: center;
 }
 
 
+/* FEATURES */
 
-.site-quote {
+.features {
+    background-color: mediumslateblue;
+}
+
+.features img {
+    padding: 5px;
+}
+
+
+/* FEATURES LATEST */
+.latest h4 {
+    font-size: 2.3rem;
+    display: inline-block;
+}
+
+.latest img {
+    max-width: 40px;
+}
+
+
+/* FEATURES RECENT */
+.recent h4 {
+    font-size: 1.8rem;
+    display: inline-block;
 
 }
 
-.hero {
-
+.recent img {
+    max-width: 30px;
 }
 
+
+/* BOTTOM NAV */
+
+.bottom-nav {
+    background-color: bisque;
+}
+
+/* FOOTER */
+.pre-footer {
+    background-color: darkcyan;
+}
+
+.footer {
+    background-color: yellow;
+}
+
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+Note: The best way to structure the use of media queries is to create the queries
+near the relevant code. For example, if you wanted to change the styles for buttons
+on small devices, paste the mobile query code up in the buttons section and style it
+there.
+*/
+
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}

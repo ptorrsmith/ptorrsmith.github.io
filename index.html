@@ -25,6 +25,8 @@
 
   <!-- Our own "Mobile First" custom styles to override as needed and set responsive styles -->
   <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/debug.css">
+
 
 
   <!-- SCRIPTS -->
@@ -43,181 +45,187 @@
 
   <!-- not sure if need to wrap the page in a container -->
   <!-- Is this div effectively the same as body ? -->
-  <div class="page container index">
+  <!-- No, as the .container class will apply a max-width, but not to body -->
+  <div class="page index">
 
-    <!-- use of <header> tag good here? Could've just been a <section> -->
+    <!-- use of <header> tag good here? Could've just been a <section> or a <div> -->
+    <!-- assuming applying class of row to header is ok for Skeleton -->
     <header class="section header container">
-      <div class="row">
-        <div class="logo two columns">
-          <img src="images/PeterTorrSmithColour-300px-width.jpg" alt="Peter Torr Smith colour photo" class="u-max-width">
+      <div class="row page-header">
+        <div class="logo one-third column">
+          <img src="images/PeterTorrSmithColour-300px-width.jpg" alt="Peter Torr Smith colour photo" class="u-max-full-width logo">
         </div>
-        <div class="site-title seven columns">
+        <div class="site-title two-thirds column">
           <h1>Peter Torr Smith</h1>
           <h3>Enspiral Dev Academy - Hihi 2019</h3>
         </div>
-        <nav class="container three columns">
-          <h3>Menu</h3>
-          <ul>
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="blog/blog-index.html">Blogs</a>
-            </li>
-            <li>
-              <a href="projects/projects-index.html">Projects</a>
-            </li>
-            <li>
-              <a href="random/random-index.html">Random</a>
-            </li>
-            <li>
-              <a href="history/history-index.html">History</a>
-            </li>
-          </ul>
-        </nav>
       </div>
+      <nav class="row menu">
+        <h3>Menu</h3>
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="blog/blog-index.html">Blogs</a>
+          </li>
+          <li>
+            <a href="projects/projects-index.html">Projects</a>
+          </li>
+          <li>
+            <a href="random/random-index.html">Random</a>
+          </li>
+          <li>
+            <a href="history/history-index.html">History</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
-
     <section class="site-quote section container">
-      <blockquote cite="#">
-        <p>Something inspirational or grounding this way comes</p>
-        <cite>
-          Anonymous
-        </cite>
-      </blockquote>
+      <div class="row">
+        <blockquote cite="#">
+          <p>Something inspirational or grounding this way comes</p>
+          <cite>
+            Anonymous
+          </cite>
+        </blockquote>
+      </div>
     </section>
 
     <section class="hero container">
-      <div class="promo-pair container">
-        <div class="promo-nav container" url="Blog/blog-index.html">
-          <a href="blog/blog-index.html"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
-          <h2>Blog</h2>
-          <h4>Tech, Cultural and Reflective Ramblings</h4>
+      <div class="row">
+        <div class="promo-nav three columns">
+            <a href="blog/blog-index.html"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text" class="u-max-full-width"></a>
+            <h3>Blog</h3>
+            <h4>Tech, Cultural and Reflective Ramblings</h4>
         </div>
-        <div class="promo-nav container" url="Blog/blog-index.html">
-          <a href="projects/projects-index.html"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
-          <h2>Projects</h2>
+        <div class="promo-nav three columns">
+          <a href="projects/projects-index.html"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"
+              class="u-max-full-width"></a>
+          <h3>Projects</h3>
           <h4>My project workspace</h4>
         </div>
-      </div>
-      <div class="promo-pair container">
-        <div class="promo-nav container" url="Blog/blog-index.html">
-          <a href="random/random-index.html"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
-          <h2>Random Resources</h2>
+        <div class="promo-nav three columns">
+          <a href="random/random-index.html"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"
+              class="u-max-full-width"></a>
+          <h3>Random Resources</h3>
           <h4>Useful links and snippets</h4>
         </div>
-        <div class="promo-nav container" url="Blog/blog-index.html">
-          <a href="history/history-index.html"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
-          <h2>History</h2>
+        <div class="promo-nav three columns">
+          <a href="history/history-index.html"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"
+              class="u-max-full-width"></a>
+          <h3>History</h3>
           <h4>People, Places, Projects, Profession, Play</h4>
         </div>
       </div>
     </section>
 
     <section class="features container">
-      <div class="container latest">
-        <h2>Latest</h2>
-        <div class="latest-promo container">
-          <a href="blog/blog-template.html"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
-          <h4><a href="blog/blog-template.html">The Latest Greatest Thing</a></h4>
-          <p>Summary/intro to Article, Blog, Project, History or Random<br>
-            Perhaps spread over a few lines.</p>
+      <div class="row">
+        <div class="one-half column latest">
+          <h2>Latest</h2>
+          <div class="latest-promo">
+            <a href="blog/blog-template.html"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
+            <h4><a href="blog/blog-template.html">The Latest Greatest Thing</a></h4>
+            <p>Summary/intro to Article, Blog, Project, History or Random<br>
+              Perhaps spread over a few lines.</p>
+          </div>
+          <div class="latest-promo">
+            <a href="blog/blog-template.html"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
+            <h4><a href="blog/blog-template.html">The Latest Greatest Thing</a></h4>
+            <p>Summary/intro to Article, Blog, Project, History or Random<br>
+              Perhaps spread over a few lines.</p>
+          </div>
+          <div class="latest-promo">
+            <a href="blog/blog-template.html"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
+            <h4><a href="blog/blog-template.html">The Latest Greatest Thing</a></h4>
+            <p>Summary/intro to Article, Blog, Project, History or Random<br>
+              Perhaps spread over a few lines.</p>
+          </div>
+          <div class="latest-promo">
+            <a href="blog/blog-template.html"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
+            <h4><a href="blog/blog-template.html">The Latest Greatest Thing</a></h4>
+            <p>Summary/intro to Article, Blog, Project, History or Random<br>
+              Perhaps spread over a few lines.</p>
+          </div>
         </div>
-        <div class="latest-promo container">
-          <a href="blog/blog-template.html"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
-          <h4><a href="blog/blog-template.html">The Latest Greatest Thing</a></h4>
-          <p>Summary/intro to Article, Blog, Project, History or Random<br>
-            Perhaps spread over a few lines.</p>
-        </div>
-        <div class="latest-promo container">
-          <a href="blog/blog-template.html"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
-          <h4><a href="blog/blog-template.html">The Latest Greatest Thing</a></h4>
-          <p>Summary/intro to Article, Blog, Project, History or Random<br>
-            Perhaps spread over a few lines.</p>
-        </div>
-        <div class="latest-promo container">
-          <a href="blog/blog-template.html"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
-          <h4><a href="blog/blog-template.html">The Latest Greatest Thing</a></h4>
-          <p>Summary/intro to Article, Blog, Project, History or Random<br>
-            Perhaps spread over a few lines.</p>
+        <div class="one-half column recent ">
+          <h2>Recent Stuff</h2>
+          <div class="-promo ">
+            <a href="blog/blog-template.html"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
+            <h4><a href="blog/blog-template.html">A Recent Thing</a></h4>
+            <p>Shorter Summary/intro to Article, Blog, Project, History or Random</p>
+          </div>
+          <div class="-promo ">
+            <a href="blog/blog-template.html"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
+            <h4><a href="blog/blog-template.html">A Recent Thing</a></h4>
+            <p>Shorter Summary/intro to Article, Blog, Project, History or Random</p>
+          </div>
+          <div class="recent-promo ">
+            <a href="blog/blog-template.html"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
+            <h4><a href="blog/blog-template.html">A Recent Thing</a></h4>
+            <p>Shorter Summary/intro to Article, Blog, Project, History or Random</p>
+          </div>
+          <div class="recent-promo ">
+            <a href="blog/blog-template.html"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
+            <h4><a href="blog/blog-template.html">A Recent Thing</a></h4>
+            <p>Shorter Summary/intro to Article, Blog, Project, History or Random</p>
+          </div>
+          <div class="recent-promo ">
+            <a href="blog/blog-template.html"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
+            <h4><a href="blog/blog-template.html">A Recent Thing</a></h4>
+            <p>Shorter Summary/intro to Article, Blog, Project, History or Random</p>
+          </div>
+          <div class="recent-promo ">
+            <a href="blog/blog-template.html"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
+            <h4><a href="blog/blog-template.html">A Recent Thing</a></h4>
+            <p>Shorter Summary/intro to Article, Blog, Project, History or Random</p>
+          </div>
+          <div class="recent-promo ">
+            <a href="blog/blog-template.html"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
+            <h4><a href="blog/blog-template.html">A Recent Thing</a></h4>
+            <p>Shorter Summary/intro to Article, Blog, Project, History or Random</p>
+          </div>
+          <div class="recent-promo ">
+            <a href="blog/blog-template.html"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
+            <h4><a href="blog/blog-template.html">A Recent Thing</a></h4>
+            <p>Shorter Summary/intro to Article, Blog, Project, History or Random</p>
+          </div>
+          <div class="recent-promo ">
+            <a href="blog/blog-template.html"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
+            <h4><a href="blog/blog-template.html">A Recent Thing</a></h4>
+            <p>Shorter Summary/intro to Article, Blog, Project, History or Random</p>
+          </div>
+          <div class="show-more">
+            <a href="#">more...</a>
+          </div>
         </div>
       </div>
-      <div class="recent container">
-        <h2>Recent Stuff</h2>
-        <div class="-promo container">
-          <a href="blog/blog-template.html"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
-          <h4><a href="blog/blog-template.html">A Recent Thing</a></h4>
-          <p>Shorter Summary/intro to Article, Blog, Project, History or Random</p>
-        </div>
-        <div class="-promo container">
-          <a href="blog/blog-template.html"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
-          <h4><a href="blog/blog-template.html">A Recent Thing</a></h4>
-          <p>Shorter Summary/intro to Article, Blog, Project, History or Random</p>
-        </div>
-        <div class="recent-promo container">
-          <a href="blog/blog-template.html"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
-          <h4><a href="blog/blog-template.html">A Recent Thing</a></h4>
-          <p>Shorter Summary/intro to Article, Blog, Project, History or Random</p>
-        </div>
-        <div class="recent-promo container">
-          <a href="blog/blog-template.html"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
-          <h4><a href="blog/blog-template.html">A Recent Thing</a></h4>
-          <p>Shorter Summary/intro to Article, Blog, Project, History or Random</p>
-        </div>
-        <div class="recent-promo container">
-          <a href="blog/blog-template.html"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
-          <h4><a href="blog/blog-template.html">A Recent Thing</a></h4>
-          <p>Shorter Summary/intro to Article, Blog, Project, History or Random</p>
-        </div>
-        <div class="recent-promo container">
-          <a href="blog/blog-template.html"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
-          <h4><a href="blog/blog-template.html">A Recent Thing</a></h4>
-          <p>Shorter Summary/intro to Article, Blog, Project, History or Random</p>
-        </div>
-        <div class="recent-promo container">
-          <a href="blog/blog-template.html"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
-          <h4><a href="blog/blog-template.html">A Recent Thing</a></h4>
-          <p>Shorter Summary/intro to Article, Blog, Project, History or Random</p>
-        </div>
-        <div class="recent-promo container">
-          <a href="blog/blog-template.html"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
-          <h4><a href="blog/blog-template.html">A Recent Thing</a></h4>
-          <p>Shorter Summary/intro to Article, Blog, Project, History or Random</p>
-        </div>
-        <div class="recent-promo container">
-          <a href="blog/blog-template.html"><img src="images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
-          <h4><a href="blog/blog-template.html">A Recent Thing</a></h4>
-          <p>Shorter Summary/intro to Article, Blog, Project, History or Random</p>
-        </div>
-        <div class="show-more">
-          <a href="#">more...</a>
-        </div>
-      </div>
-
       <!-- /features -->
     </section>
 
-    <section class="bottom-nav static bottom right">
+    <section class="bottom-nav static bottom right container">
       <a href="#">Back to Top</a>
     </section>
 
     <section class="pre-footer container">
-      <div class="container">an optional pre-footer space</div>
-    </section>
-    <footer>
       <div class="row">
-        <div class="column three left">Peter Torr Smith</div>
-        <div class="column three center">
+        <div class="container">an optional pre-footer space</div>
+      </div>
+    </section>
+    <footer class="footer container">
+      <div class="row">
+        <div class="one-third column">Peter Torr Smith</div>
+        <div class="one-third column">
           <span class="facebook">f</span>
           <span class="twitter">t</span>
         </div>
-        <div class="column three left">
+        <div class="one-third column">
           <!-- should this be a span or a p tag?? -->
           <span>&copy; 2018</span>
         </div>
       </div>
-
     </footer>
 
 
