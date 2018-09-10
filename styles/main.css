@@ -10,10 +10,11 @@
 /* SHARED  */
 
 body {
-    background-color: black;
+    /* background-color: black; */
 }
 
 img {
+    border: solid white .6rem;
 
 }
 
@@ -47,7 +48,11 @@ img {
 }
 
 .content-index .logo {
-    max-height: 150px;
+    max-height: 120px;
+}
+
+.content .logo {
+    max-height: 95px;
 }
 
 nav {
@@ -62,9 +67,6 @@ nav li {
 }
 
 nav a {
-    /* border: 1px solid lightgrey;
-    margin: 0px;
-    padding: 5px; */
     padding: 5px;
     border: 1px solid lightgrey;
     margin: 0;
@@ -103,7 +105,8 @@ a {
 
 .hero img {
     max-width: 30px;
-    padding: 5px;
+    /* padding: 5px; */
+    border: solid white .2em;
 }
 
 .hero h3 {
@@ -192,7 +195,7 @@ a {
 }
 
 .features img {
-    padding: 5px;
+    /* padding: 5px; */
 }
 
 
@@ -204,6 +207,7 @@ a {
 
 .latest img {
     max-width: 40px;
+    border: solid white .3rem;
 }
 
 
@@ -216,6 +220,7 @@ a {
 
 .recent img {
     max-width: 30px;
+    border: solid white .2rem;
 }
 
 
