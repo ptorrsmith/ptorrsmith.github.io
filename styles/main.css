@@ -246,7 +246,7 @@ aside {
 }
 
 .latest img {
-    max-width: 40px;
+    max-width: 70px;
     border: solid white .2rem;
     background-color: white;
 }
@@ -265,7 +265,7 @@ aside {
 }
 
 .recent img {
-    max-width: 30px;
+    max-width: 60px;
     border: solid white .1rem;
     background-color: white;
 }
