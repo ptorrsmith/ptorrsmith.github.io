@@ -258,10 +258,17 @@ aside {
     /* background-color: mediumslateblue; */
 }
 
+.features h2 {
+    font-size: 2em;
+    text-align: center;
+}
 .features img {
     /* padding: 5px; */
 }
 
+.features p {
+    margin-bottom: .5em;
+}
 
 /* FEATURES LATEST */
 
@@ -281,11 +288,21 @@ aside {
     background-color: white;
 }
 
+.latest-promo {
+    border: 1px solid #dcd577;
+    margin-left: 5px;
+    padding: 4px;
+}
+
 
 /* FEATURES RECENT */
 
 .container .recent {
     /* background-color:brown; */
+}
+
+.recent-promo, .latest-promo {
+    margin-top: 1.5em;
 }
 
 .recent h4 {
@@ -295,11 +312,25 @@ aside {
 }
 
 .recent img {
-    max-width: 60px;
+    max-width: 40px;
     border: solid white .1rem;
     background-color: white;
 }
 
+.recent-promo {
+    border: 1px solid #dcd577;
+    margin-right: 5px;
+    padding: 4px;
+}
+
+.recent-promo p {
+    font-size: 1.4rem;
+}
+
+.recent-promo h4 {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
 
 /* BOTTOM NAV */
 
