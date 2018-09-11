@@ -36,8 +36,11 @@ img {
 
 .container {
     max-width: 960px;
-    /* padding-left: 10px;
-    padding-right: 10px; */
+    background-color: darkkhaki;
+}
+
+section.features {
+    padding-bottom: 10px;
 }
 
 /* PAGE */
@@ -46,12 +49,6 @@ img {
 }
 
 
-/* CONTAINER */
-
-.container {
-    /* max-width: 960px; */
-    background-color: darkkhaki;
-}
 
 /* HEADER */
 .header {
@@ -305,6 +302,11 @@ aside {
     margin-top: 1.5em;
 }
 
+.recent h2 {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
 .recent h4 {
     font-size: 1.8rem;
     display: inline-block;
@@ -364,8 +366,8 @@ there.
 @media (min-width: 400px) {
     body { font-size: 1.5rem; } 
     h1   { font-size: 2.6rem; } 
-    .content .logo {
-        max-height: 65px;
+    .header .logo {
+        max-width: 60%;
     }
     
 }
@@ -374,33 +376,26 @@ there.
 @media (min-width: 550px) {
     body { font-size: 1.7rem; } 
     h1   { font-size: 2.8rem; } 
-    .content .logo {
-        max-height: 125px;
+    .header .logo {
+        max-width: 100%;
     }
+    
 }
 
 /* Larger than tablet */
 @media (min-width: 750px) {
     body { font-size: 1.9rem; } 
     h1   { font-size: 3rem; } 
-    .content .logo {
-        max-height: 145px;
-
 }
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
     body { font-size: 2.1rem; } 
     h1   { font-size: 3.3rem; } 
-    .content .logo {
-        max-height: 165px;
-
 }
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
     body { font-size: 2.4rem; } 
     h1   { font-size: 3.8rem; } 
-    .content .logo {
-        max-height: 200px;
 }
