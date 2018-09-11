@@ -23,6 +23,7 @@ h1   {
 
 h2 {
     font-size: 2rem;
+    padding-top: 15px;
 }
 
 img {
@@ -58,7 +59,7 @@ img {
 }
 
 .index .logo {
-    max-height: 200px;   
+    max-height: 100px;   
 }
 
 .content-index .logo {
@@ -109,19 +110,27 @@ a {
 /* SITE-QUOTE */
 
 .site-quote {
-    /* background-color: lightskyblue; */
+    background-color: darkgreen;
+    color: greenyellow;
+    padding-top: 20px;
 }
 
+blockquote {
+    /* To override normalise "user agent" margin on blockquote as was forcing gap prior to section */
+    /* -webkit-margin-before: 0; */
+    margin-top: 0;
+}
 
 /* HERO */
 .hero {
-    /* background-color: aquamarine; */
+    background-color: lemonchiffon;
 }
 
 .hero img {
     max-width: 30px;
+    margin-top: 15px;
     /* padding: 5px; */
-    border: solid white .2em;
+    /* border: solid white .2em; */
 }
 
 .hero h3 {
@@ -225,18 +234,30 @@ aside {
 
 
 /* FEATURES LATEST */
+
+.container .latest {
+    /* background-color: aquamarine; */
+    /* margin: 20px;
+    padding: 20px; */
+}
 .latest h4 {
     font-size: 2.3rem;
-    display: inline-block;
+    display: inline;
 }
 
 .latest img {
     max-width: 40px;
-    border: solid white .3rem;
+    border: solid white .2rem;
+    background-color: white;
 }
 
 
 /* FEATURES RECENT */
+
+.container .recent {
+    /* background-color:brown; */
+}
+
 .recent h4 {
     font-size: 1.8rem;
     display: inline-block;
@@ -245,23 +266,26 @@ aside {
 
 .recent img {
     max-width: 30px;
-    border: solid white .2rem;
+    border: solid white .1rem;
+    background-color: white;
 }
 
 
 /* BOTTOM NAV */
 
 .bottom-nav {
-    /* background-color: bisque; */
+    background-color: darkgreen;
+    color: greenyellow;
 }
 
 /* FOOTER */
 .pre-footer {
-    /* background-color: darkcyan; */
+    background-color: darkcyan; 
 }
 
-.footer {
-    /* background-color: yellow; */
+footer.container {
+    background-color: darkorange;
+    
 }
 
 
