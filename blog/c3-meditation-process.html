@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- BASIC NEEDS -->
+    <meta charset="UTF-8">
+    <title>PTorr's T3 Design To Web experience</title>
+    <meta name="author" content="Peter Torr Smith">
+    <meta name="description" content="blog post by Peter Torr Smith">
+
+
+    <!-- MOBILE NEEDS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- FONT -->
+    <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+
+
+    <!-- STYLES -->
+
+    <!-- Normalize and Skeleton styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <!-- Our own "Mobile First" custom styles to override as needed and set responsive styles -->
+    <link rel="stylesheet" href="../styles/main.css">
+    <!-- <link rel="stylesheet" href="../styles/debug.css"> -->
+
+
+    <!-- SCRIPTS -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+    <!-- FAVICON -->
+    <link rel="icon" href="//www.hirethings.co.nz/favicon.ico" type="image/gif">
+
+
+</head>
+
+<body>
+    <!-- 
+        .page is full page outline
+        .blog is the section
+        .content is the content type (content, content-index, [site] index)
+     -->
+    <div class="page blog content">
+        <!-- 
+            .section of the page structure
+            .header and <header>. Will use .header to keep CSS class based more than html element (??)
+         -->
+
+        <header class="section header container">
+            <div class="row page-header">
+                <div class="logo two columns">
+                    <img src="../images/PeterTorrSmithColour-300px-width.jpg" alt="Peter Torr Smith colour photo" class="u-max-full-width logo">
+                </div>
+                <div class="site-title ten columns">
+                    <h1>C3 Blog: Meditation</h1>
+                    <h4>Process and Practice</h4>
+                </div>
+            </div>
+            <nav class="row menu">
+                <!-- <h3>Menu</h3> -->
+                <ul>
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="blog-index.html" class="current">Blogs</a>
+                    </li>
+                    <li>
+                        <a href="../projects/projects-index.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="../random/random-index.html">Random</a>
+                    </li>
+                    <li>
+                        <a href="../history/history-index.html">History</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="container">
+            <section class="content">
+                <article>
+                    <section class="content-header row">
+                        <div class="content-header-image">
+                            <img src="../images/wireframes/wireframing-header.jpg" alt="alt text" class="u-max-full-width">
+                        </div>
+                        <div class="content-header-title">
+                            <h2>Meditation, Mindfulness, and Modern Ways</h2>
+                            <h3>TM, Mindfulness, Muse</h3>
+                            <h4>by: Peter Torr Smith</h4>
+                            <h4>11th September, 2018</h4>
+                            <h5 class="tag-heading">Tags/Categories</h5>
+                            <ul class="tags">
+                                <li><a href="#">blog-post</a></li>
+                                <li><a href="#">technical</a></li>
+                                <li><a href="#">EDA-core</a></li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="content-body row">
+                        <h3>What did you think about meditation before reading chapter 2?</h3>
+                        <p></p>
+                        <h3>What new things have you learnt about meditation?</h3>
+                        <p></p>
+                        <h3>id any of the suggested meditation techniques stand out to you?</h3>
+                        <p></p>
+                        <h3>Any other musings?</h3>
+                        <p></p>
+                    </section>
+                    <aside>
+                        <div class="row">
+                            <h3>Wireframes for this Blog</h3>
+                            <p>Here's my initial wireframes for this site. <br>
+                                Looking at these two pages, first a mobile experience, and then a desktop experience</p>
+                            <figure class="five columns">
+                                <img src="../images/wireframes/wireframe-index-page-mobile.jpg" alt="Wireframe diagram for home page on mobile"
+                                    class="u-max-full-width">
+                                <figcaption>Fig1. - Wireframe diagram for home page on mobile</figcaption>
+                            </figure>
+                            <figure class="five columns">
+                                <img src="../images/wireframes/wireframe-index-page-desktop.jpg" alt="Wireframe diagram for home page on desktop"
+                                    class="u-max-full-width">
+                                <figcaption>Fig1. - Wireframe diagram for home page on desktop</figcaption>
+                            </figure>
+                        </div>
+                        <div class="row">
+                            <figure class="five columns">
+                                <img src="../images/wireframes/wireframe-blog-page-mobile.jpg" alt="Wireframe diagram for blog post page on mobile"
+                                    class="u-max-full-width">
+                                <figcaption>Fig1. - Wireframe diagram for blog post page on mobile</figcaption>
+                            </figure>
+                            <figure class="five columns">
+                                <img src="../images/wireframes/wireframe-blog-page-desktop.jpg" alt="Wireframe diagram for blog post page on desktop"
+                                    class="u-max-full-width">
+                                <figcaption>Fig1. - Wireframe diagram for blog post page on desktop</figcaption>
+                            </figure>
+                        </div>
+                    </aside>
+                </article>
+            </section>
+            <!-- <div class="related">
+                <h2>Related</h2>
+                <div class="row">
+                    <div class="related-item four columns">
+                        <a href="blog-template.html"><img src="../images/rapids.jpg" alt="alt text" class="u-max-full-width"></a>
+                        <h4><a href="blog-template.html">A Related Thing</a></h4>
+                        <p>Shorter Summary/intro to related Article, Blog, Project, History or Random</p>
+                    </div>
+                    <div class="related-item four columns">
+                        <a href="blog-template.html"><img src="../images/rapids.jpg" alt="alt text" class="u-max-full-width"></a>
+                        <h4><a href="blog-template.html">A Related Thing</a></h4>
+                        <p>Shorter Summary/intro to related Article, Blog, Project, History or Random</p>
+                    </div>
+                    <div class="related-item four columns">
+                        <a href="blog-template.html"><img src="../images/rapids.jpg" alt="alt text" class="u-max-full-width"></a>
+                        <h4><a href="blog-template.html">A Related Thing</a></h4>
+                        <p>Shorter Summary/intro to related Article, Blog, Project, History or Random</p>
+                    </div>
+                </div>
+                <div class="show-more row">
+                    <a href="#">more...</a>
+                </div>
+            </div> -->
+        </main>
+
+        <!-- FOOTER COMMON -->
+
+        <section class="bottom-nav static bottom right container">
+            <a href="#">Back to Top</a>
+        </section>
+
+        <section class="pre-footer container">
+            <div>an optional pre-footer space</div>
+        </section>
+        <footer class="container">
+            <div class="row">
+                <div class="five columns">Peter Torr Smith</div>
+                <div class="four columns">
+                    <span class="facebook">f</span>
+                    <span class="twitter">t</span>
+                </div>
+                <div class="three columns">
+                    <!-- should this be a span or a p tag?? -->
+                    <span>&copy; 2018</span>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+</body>
+
+</html>
