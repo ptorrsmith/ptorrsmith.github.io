@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <title>PTorr's T4 JavaScript blog</title>
     <meta name="author" content="Peter Torr Smith">
-    <meta name="description" content="PTorr's T4 blog on learning JavaScript basics and data structures">
+    <meta name="description" content="PTorr's C4 blog on daily mindfullness and reading Search Inside Yourself chapter 3">
 
 
     <!-- MOBILE NEEDS -->
@@ -47,6 +47,7 @@
         <!-- 
             .section of the page structure
             .header and <header>. Will use .header to keep CSS class based more than html element (??)
+            .container to allow skeleton rows and columns to flow inside container max-width
          -->
 
         <header class="section header container">
@@ -86,261 +87,52 @@
                 <article>
                     <section class="content-header row">
                         <div class="content-header-image">
-                            <img src="../images/FreeCodeCampFun.png" alt="My endless while loop!" title="An accidental endless while loop!"
-                                class="u-max-full-width">
+                            <!-- <img src="../images/FreeCodeCampFun.png" alt="My endless while loop!" title="An accidental endless while loop!"
+                                class="u-max-full-width"> -->
                         </div>
                         <div class="content-header-title">
-                            <h2>JavaScript Basics</h2>
-                            <h3>variables, arrays and objects, looping and JSON</h3>
+                            <h2>Daily mindfullness</h2>
+                            <h3>and reading Search Inside Yourself</h3>
                             <h4>by: Peter Torr Smith</h4>
-                            <h4>14th September, 2018</h4>
+                            <h4>15th September, 2018</h4>
                             <h5 class="tag-heading">Tags/Categories</h5>
                             <ul class="tags">
                                 <li><a href="#">blog-post</a></li>
-                                <li><a href="#">technical</a></li>
+                                <li><a href="#">cultural</a></li>
                                 <li><a href="#">EDA-core</a></li>
                             </ul>
                         </div>
                     </section>
                     <section class="content-body row">
-                        <h3>Working through 107 JavaScript Basics coding challenges at <a href="https://www.freecodecamp.org/">Free
-                                Code Camp</a></h3>
-                        <p></p>
-                        <h4>How does JavaScript compare to HTML and CSS?</h4>
-                        <p>HTML, CSS and JavaScript work together as a trio to create well structure, stylish and
-                            dynamic web pages. They each have a different role and are ideally kept in separate files
-                            that the browser brings together to create and show the page and interact with it.</p>
-                        <p>It is common for most if not all pages in a website to refer to the same CSS and JavaScript
-                            files.</p>
-                        <p>This separation of duties/roles into separate files allows us to maintain/change the look
-                            and feel and
-                            behaviour of multiple pages without needing to edit each individual HTML file.</p>
-                        <h5>HTML - Hyper Text Markup Language</h5>
-                        <p>HTML is used to wrap our content (text, images, videos) with html tags that:
+                        <h3>h3 heading</a></h3>
+                        <p>paragraph text</p>
+                        <h4>h4 heading</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum dolorem dolorum corporis
+                            iusto hic error, earum sit quasi quibusdam similique quis doloremque animi quae omnis in
+                            cum voluptate laborum molestias?</p>
+                        <h5>h5 heading</h5>
+                        <p>blah:
                             <ol>
-                                <li>indicates the semantic meaning, purpose or role of a piece of content, e.g.
-
-                                    <ul>
-                                        <li><code>&lt;p class="extract"></code>A paragraph<code>&lt;/p></code></li>
-                                        <li><code>&lt;h2></code>A major sub-heading in a page<code>&lt;/h2></code></li>
-                                        <li><code>&lt;article></code>A wrapper around some content, indicating that the
-                                            content is a self
-                                            contained article<code>&lt;/article</code></li>
-                                        <li><code>&lt;footer></code>a footer section<code>&lt;/footer></code></li>
-                                    </ul>
-
+                                <li>blah
                                 </li>
                                 <li>
-                                    creates a basic structure, and order for the page content elements and how they
-                                    relate
-                                    to each other, e.g.
-                                    <ul>
-                                        <li><code>&lt;header> &lt;/header></code> wraps any elements that make up the
-                                            header of the page</li>
-                                        <li><code>&lt;main> &lt;/main></code> is after the <code>&lt;header>&lt;/header></code>
-                                            section generally and wraps the main
-                                            content of the page</li>
-                                        <li><code>&lt;article> &lt;/article></code> would normally be inside the <code>&lt;main></code>
-                                            section, showing it is
-                                            part of the main content of the page</li>
-                                    </ul>
+                                    blah
                                 </li>
-                                <li>contains the actual text content, and links to required images, videos or other
-                                    content.</li>
+                                <li>blah</li>
                             </ol>
                         </p>
-                        <p>Anything related to the look or style, and sometimes how they should "float" or order the
-                            elements on different
-                            screen sizes, should not be part of the html file, but instead should be managed in an
-                            associated <abbr title="Cascading Style Sheet">CSS</abbr>
-                        </p>
-                        <h5>CSS - Cascading Style Sheets</h5>
-                        <p> CSS is what the browser uses to apply styles such as background-colors, borders, and even
-                            how various page elements (such as some &lt;section> or &lt;div> elements) should "float"
-                            when the browser window is too narrow to show them side by side.
-                        </p>
-                        <p>CSS code is kept in a separate file which the HTML file links in and uses:
-                            <code>&lt;link rel="stylesheet" href="../styles/main.css"></code>
-                        </p>
-                        <h5>JavaScript</h5>
-                        <p>JavaScript is the native programming or control language browsers use to allow for advanced
-                            interaction with the page elements, and for manipulating the page elements (known as the
-                            <abbr title="Document Object Model">DOM</abbr>) after (or before or during) the page loads.</p>
-                        <p>JavaScript is used in other places also, such as for backend (server-side) programming, but
-                            for now, we'll just focus on its role in the context of displaying and changing a web page.</p>
-                        <p>JavaScript is what enables us to make interactive web "apps" (applications), rather that
-                            just static pages if we just used HTML and CSS.
-                        </p>
-                        <p>A common use for JavaScript in the browser could include:
-                            <ul>
-                                <li>Hiding or showing certain page elements dynamically depending on some user
-                                    interaction such as clicking a button</li>
-                                <li>Resizing a page section to show more content when a user clicks a "show more" link</li>
-                                <li>Changing an image's content for another image, such as a revolving banner</li>
-                            </ul>
-                        </p>
-                        <p>Like CSS, JavaScript is kept in separate files which the HTML page links in to use:
-                            <code>&lt;script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></code>
-                        </p>
+                        <p>blah </p>
 
 
-                        <h4>Explain control flow and loops using an example process from everyday life, for example
-                            'waking up' or 'brushing your teeth'.</h4>
-                        <p><strong>Control flow</strong> is about executing certain lines or blocks of code based
-                            on
-                            certain conditions.
-                            This could be done with an "if then... else if... else" condition, or a "switch... case
-                            a.... case b..." style logic in the JavaScript. An everyday life example could be like:
-                            <ul>
-                                <li>IF i've just had breakfast or am about to head out of the house and I haven't
-                                    yet brushed my teeth this morning:
-                                </li>
-                                <li>THEN brush my teeth</li>
-                            </ul>
-                        </p>
-                        <p><strong>Loops</strong> in programming logic tell the flow of control of the programme to
-                            keep
-                            executing a block of instructions until or while a certain condition is met. <br>
-                            An example could be:
-                            <ul>
-                                <li>WHILE I'm looking through photo album and I've not found the photo of Aunty
-                                    Mary
-                                    I'm
-                                    looking for
-                                    on this page...</li>
-                                <li>THEN turn the album page</li>
-                                <li>look for the photo I'm looking for on this page</li>
-                                <li>END WHILE LOOP (start loop again)</li>
-                            </ul>
-                        </p>
-                        <p>
-                            Control flow and looping are core programming concepts, often used to loop through
-                            collections of
-                            data items or to check if a certain condition is met before executing some other code.
-                        </p>
 
-
-                        <h4>Explain the difference between accessing data from arrays and objects.</h4>
-                        <p>An Array is an ordered collection of items such as the songs in my playlist.</p>
-                        <p>An object is a collection of 1 or more "property: value" pairs (such as "Song Title":
-                            "Amazing Grace";)
-                            that have both a "property" (e.g. "songTitle) and a "value" (e.g. "Let it be"). The
-                            collection of multiple properties collectively define the object</p>
-                        <p>Accessing items from an array is by referencing its numeric position in the ordered
-                            list.
-                            The first item in an array called "myAlbums" would be retrieved by asking for
-                            myAlbums[0], and the last would be myAlbums[myAlbums.length -1]. It is common to loop or
-                            scan through arrays to retrieve or act on 1, some or all of the results.
-                        </p>
-                        <p>Accessing items ("properties") from within an object, such as an an object called
-                            "myAlbum", is by referring to the property name. e.g. myAlbums["Song Title"].
-                        </p>
-                        <p>Arrays can be ordered collections of text, numbers, objects or other (sub) arrays, and
-                            objects can have
-                            property values of simple text, numbers, arrays, and other objects.
-                            This nesting of data structures (arrays of objects, objects with arrays) allows us to
-                            create rich and complex/nested ways to programatically model real-world or abstract
-                            concepts in our programme.</p>
-
-                        <h4>Explain what functions are and why they are useful.</h4>
-                        <p>Functions are blocks of code that can be defined to be called by other code, and may
-                            be defined to take none or one or more "parameters" as inputs to the code.
-                        </p>
-                        <p>Functions often return a value to the calling code, but may simply update a value and
-                            return nothing ("undefined" in JavaScript).
-                        </p>
+                        <h4>h4</h4>
+                        <p>blah></p>
                     </section>
                     <aside>
                         <div class="row">
-                            <h3>My Solution to a nested objects and arrays function challenge</h3>
-                            <h5>FreeCodeCamp </h5>
-                            <p>I expect there's a way simpler way to do this, so I'll look back
-                                at this sometime and have a laugh :-) </p>
-                            <pre><code class="u-max-full-width">
-// this is making an array called contacts.
-// Each item in the array is an object.
-// Each object has one or more "propertyName": value; pairs
-// Notice how the property "likes" is an array of text items.
-var contacts = [
-    {
-        "firstName": "Akira",
-        "lastName": "Laine",
-        "number": "0543236543",
-        "likes": ["Pizza", "Coding", "Brownie Points"]
-    },
-    {
-        "firstName": "Harry",
-        "lastName": "Potter",
-        "number": "0994372684",
-        "likes": ["Hogwarts", "Magic", "Hagrid"]
-    },
-    {
-        "firstName": "Sherlock",
-        "lastName": "Holmes",
-        "number": "0487345643",
-        "likes": ["Intriguing Cases", "Violin"]
-    },
-    {
-        "firstName": "Kristian",
-        "lastName": "Vos",
-        "number": "unknown",
-        "likes": ["JavaScript", "Gaming", "Foxes"]
-    }
-];
-
-
-// Let's create a function to find a contact by their first name
-// (actually this only finds the first one that matches)
-function lookUpProfile(name, prop) {
-
-    var foundContact;
-    var foundContactResult = "";
-    var i = 0;
-
-    // work through each contact object
-    do {
-        // get the next contact from the next array position
-        var contact = contacts[i];
-        // check it has a firstName property
-        if (contact.hasOwnProperty("firstName")) {
-            // check if matches the name passed in
-            if (contact["firstName"] == name) {
-                // set our foundContact to be the current contact
-                foundContact = contact;
-                // see if our found contact has a property that matches prop passed in
-                if (contact.hasOwnProperty(prop)) {
-                    // set the foundContactResult to be the value of that property
-                    // this so we can return the value
-                    foundContactResult = contact[prop];
-                }
-            }
-        }
-        i++; // set the count up 1
-        // stop the while-loop if we have a value for our requested property
-        //  or if we've reached the end of the array 
-    } while (foundContactResult == "" && i &lt; contacts.length);
-
-    // Decide what results to return
-    // Did we find a contact by that name?
-    if (foundContact) {
-        // did it have a value for the requested property?
-        // if so, return it
-        if (foundContactResult == "") {
-            // return a message
-            return "No such property";
-        } else {  // retrun the property value
-            return foundContactResult;
-        }
-    } else {  // no foundContact message
-        return "No such contact";
-    }
-    return foundContactResult;
-}
-
-
-// and example of calling this function
-lookUpProfile("Bob", "number");
-                            </code></pre>
+                            <h3>h3 heading</h3>
+                            <h5>h5 heading</h5>
+                            <p>Blurb</p>
                             <p></p>
                         </div>
                     </aside>
