@@ -109,7 +109,7 @@
                         <h4>How does JavaScript compare to HTML and CSS?</h4>
                         <p>HTML, CSS and JavaScript work together as a trio to create well structure, stylish and
                             dynamic web pages. They each have a different role and are ideally kept in separate files
-                            that the brower brings together to show the page.</p>
+                            that the browser brings together to create and show the page and interact with it.</p>
                         <p>It is common for most if not all pages in a website to refer to the same CSS and JavaScript
                             files.</p>
                         <p>This separation of duties/roles into separate files allows us to maintain/change the look
@@ -208,9 +208,9 @@
                                     I'm
                                     looking for
                                     on this page...</li>
-                                <li>THEN turn the albumn page</li>
+                                <li>THEN turn the album page</li>
                                 <li>look for the photo I'm looking for on this page</li>
-                                <li>END WHILE LOOP</li>
+                                <li>END WHILE LOOP (start loop again)</li>
                             </ul>
                         </p>
                         <p>
@@ -222,25 +222,25 @@
 
                         <h4>Explain the difference between accessing data from arrays and objects.</h4>
                         <p>An Array is an ordered collection of items such as the songs in my playlist.</p>
-                        <p>An object is also a collection of properties and values (such as Song Title, Artists)
-                            that
-                            have
-                            both a "property" (e.g. Song Title) and a "value" (e.g. "Let it be"). The collection of
-                            multiple properties collectively define the object</p>
+                        <p>An object is a collection of 1 or more "property: value" pairs (such as "Song Title":
+                            "Amazing Grace";)
+                            that have both a "property" (e.g. "songTitle) and a "value" (e.g. "Let it be"). The
+                            collection of multiple properties collectively define the object</p>
                         <p>Accessing items from an array is by referencing its numeric position in the ordered
                             list.
                             The first item in an array called "myAlbums" would be retrieved by asking for
-                            myAlbums[0], and the last would be myAlbums[myAlbums.length -1].
+                            myAlbums[0], and the last would be myAlbums[myAlbums.length -1]. It is common to loop or
+                            scan through arrays to retrieve or act on 1, some or all of the results.
                         </p>
-                        <p>Access items ("properties") from within an object, such as an an object called
-                            "myAlbum", is
-                            by referring to the property name. e.g. myAlbums["Song Title"].
+                        <p>Accessing items ("properties") from within an object, such as an an object called
+                            "myAlbum", is by referring to the property name. e.g. myAlbums["Song Title"].
                         </p>
-                        <p>Arrays can be ordered collections of objects or other (sub) arrays, and objects can have
-                            other objects as one of their properties. This nesting of data structures allows us to
-                            create rich and complex ways to programatically model real-world or abstract concepts
-                            in
-                            our programme.</p>
+                        <p>Arrays can be ordered collections of text, numbers, objects or other (sub) arrays, and
+                            objects can have
+                            property values of simple text, numbers, arrays, and other objects.
+                            This nesting of data structures (arrays of objects, objects with arrays) allows us to
+                            create rich and complex/nested ways to programatically model real-world or abstract
+                            concepts in our programme.</p>
 
                         <h4>Explain what functions are and why they are useful.</h4>
                         <p>Functions are blocks of code that can be defined to be called by other code, and may
@@ -250,16 +250,101 @@
                             return nothing ("undefined" in JavaScript).
                         </p>
                     </section>
-                    <!-- <aside>
+                    <aside>
                         <div class="row">
-                            <h3></h3>
-                            <h5><br>
-                            </h5>
-                            <p></p>
+                            <h3>My Solution to a nested objects and arrays function challenge</h3>
+                            <h5>FreeCodeCamp </h5>
+                            <p>I expect there's a way simpler way to do this, so I'll look back
+                                at this sometime and have a laugh :-) </p>
+                            <pre><code class="u-max-full-width">
+// this is making an array called contacts.
+// Each item in the array is an object.
+// Each object has one or more "propertyName": value; pairs
+// Notice how the property "likes" is an array of text items.
+var contacts = [
+    {
+        "firstName": "Akira",
+        "lastName": "Laine",
+        "number": "0543236543",
+        "likes": ["Pizza", "Coding", "Brownie Points"]
+    },
+    {
+        "firstName": "Harry",
+        "lastName": "Potter",
+        "number": "0994372684",
+        "likes": ["Hogwarts", "Magic", "Hagrid"]
+    },
+    {
+        "firstName": "Sherlock",
+        "lastName": "Holmes",
+        "number": "0487345643",
+        "likes": ["Intriguing Cases", "Violin"]
+    },
+    {
+        "firstName": "Kristian",
+        "lastName": "Vos",
+        "number": "unknown",
+        "likes": ["JavaScript", "Gaming", "Foxes"]
+    }
+];
+
+
+// Let's create a function to find a contact by their first name
+// (actually this only finds the first one that matches)
+function lookUpProfile(name, prop) {
+
+    var foundContact;
+    var foundContactResult = "";
+    var i = 0;
+
+    // work through each contact object
+    do {
+        // get the next contact from the next array position
+        var contact = contacts[i];
+        // check it has a firstName property
+        if (contact.hasOwnProperty("firstName")) {
+            // check if matches the name passed in
+            if (contact["firstName"] == name) {
+                // set our foundContact to be the current contact
+                foundContact = contact;
+                // see if our found contact has a property that matches prop passed in
+                if (contact.hasOwnProperty(prop)) {
+                    // set the foundContactResult to be the value of that property
+                    // this so we can return the value
+                    foundContactResult = contact[prop];
+                }
+            }
+        }
+        i++; // set the count up 1
+        // stop the while-loop if we have a value for our requested property
+        //  or if we've reached the end of the array 
+    } while (foundContactResult == "" && i &lt; contacts.length);
+
+    // Decide what results to return
+    // Did we find a contact by that name?
+    if (foundContact) {
+        // did it have a value for the requested property?
+        // if so, return it
+        if (foundContactResult == "") {
+            // return a message
+            return "No such property";
+        } else {  // retrun the property value
+            return foundContactResult;
+        }
+    } else {  // no foundContact message
+        return "No such contact";
+    }
+    return foundContactResult;
+}
+
+
+// and example of calling this function
+lookUpProfile("Bob", "number");
+                            </code></pre>
                             <p></p>
                         </div>
                     </aside>
-                </article> -->
+                </article>
             </section>
             <div class="related">
                 <h2>Related</h2>

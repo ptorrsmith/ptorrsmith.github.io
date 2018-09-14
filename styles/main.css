@@ -259,6 +259,12 @@ aside {
     font-style: italic;
 }
 
+aside code {
+    font-size: 1.1rem;
+    font-weight: bold;
+    
+}
+
 /* RELATED CONTENT PROMO */
 
 .related-item img {
