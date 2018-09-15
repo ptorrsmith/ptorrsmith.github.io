@@ -47,6 +47,11 @@ img {
 
 }
 
+.works-title {
+    font-style: italic;
+    margin-right: 0.3rem;
+}
+
 /* CONTAINER */
 
 .container {
