@@ -47,7 +47,7 @@ img {
 
 }
 
-.works-title {
+.work-title {
     font-style: italic;
     margin-right: 0.3rem;
 }
@@ -267,6 +267,7 @@ aside {
 aside code {
     font-size: 1.1rem;
     font-weight: bold;
+    font-style: normal;
     
 }
 
