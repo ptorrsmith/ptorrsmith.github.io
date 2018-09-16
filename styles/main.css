@@ -93,6 +93,11 @@ section.features {
     max-height: 55px;
 }
 
+.content-landscape-image {
+    text-align: center;
+    background-color: white;
+}
+
 nav {
     margin-top: 10px;
 }
