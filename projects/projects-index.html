@@ -4,7 +4,7 @@
 <head>
     <!-- BASIC NEEDS -->
     <meta charset="UTF-8">
-    <title>Pete's Blogs</title>
+    <title>Pete's Enspiral Dev Academy Projects</title>
     <meta name="author" content="Peter Torr Smith">
     <meta name="description" content="Projects home page">
 
@@ -40,27 +40,173 @@
 </head>
 
 <body>
-    <header class="container">
-        <div class="row">
-
-        <a href="../index.html" class="button button-primary">Home</a>
 
 
-        <h1>Projects Landing Page</h1>
-        <h2>What we've built</h2>
+    <!-- 
+        .page is full page outline
+        .blog is the section
+        .content is the content type (content, content-index, [site] index)
+     -->
+    <div class="page content-index">
+        <!-- 
+                .section of the page structure
+                .header and <header>. Will use .header to keep CSS class based more than html element (??)
+                .container to allow skeleton rows and columns to flow inside container max-width
+             -->
+
+        <header class="section header container">
+            <div class="row page-header">
+                <div class="logo one-third column">
+                    <img src="../images/PeterTorrSmithColour-300px-width.jpg" alt="Peter Torr Smith colour photo" class="u-max-full-width logo">
+                </div>
+                <div class="site-title two-thirds column">
+                    <h1>Pete's Enspiral Dev Academy Projecs</h1>
+                    <h3>Steps in the Journey</h3>
+                </div>
+            </div>
+            <nav class="row menu">
+                <!-- <h3>Menu</h3> -->
+                <ul>
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../blog/blog-index.html">Blogs</a>
+                    </li>
+                    <li>
+                        <a href="#" class="current">Projects</a>
+                    </li>
+                    <li>
+                        <a href="../random/random-index.html">Random</a>
+                    </li>
+                    <li>
+                        <a href="../history/history-index.html">History</a>
+                    </li>
+                </ul>
+            </nav>
+            <section class="content-header row">
+                <div class="content-header-image content-landscape-image">
+                    <img src="../images/S5-DotsChallenge.gif" alt="Javascript Dots Challenge animation" class="u-max-full-width">
+                </div>
+                <!-- <div class="content-header-title">
+                            <h2>Problem Solving and Javascript events and DOM Classes</h2>
+                            <h3>Responding to user input and changing the web page</h3>
+                            <h4>by: Peter Torr Smith</h4>
+                            <h4>18th September, 2018</h4>
+                            <h5 class="tag-heading">Tags/Categories</h5>
+                            <ul class="tags">
+                                <li><a href="#">blog-post</a></li>
+                                <li><a href="#">technical</a></li>
+                                <li><a href="#">EDA-core</a></li>
+                            </ul>
+                        </div> -->
+            </section>
+
+
+        </header>
+
+
+
+        <section class="features container">
+            <div class="row">
+                <div class="one-half column latest">
+
+                    <h2>Latest</h2>
+                    <div class="latest-promo">
+                        <a href="dom-events-and-classes/"><img src="../images/S5-DotsChallenge.gif" alt="Pete's first Javascript event Dots Challenge"></a>
+                        <h4><a href="dom-events-and-classes/">Pete's first Javascript event Dots Challenge</a></h4>
+                        <p>and my first Javascript interactive game!</span></p>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <!-- <div class="one-half column recent ">
+
+                    <h2>Recent Stuff</h2>
+
+                    <div class="recent-promo">
+                        <a href="c2-emotional-intelligence.html">C2 Emotional Intellgence</a>
+                    </div>
+                    <div class="recent-promo">
+                        <a href="t2-html-css-dom-p2.html">T2 CSS and DOM - Part 2</a>
+                    </div>
+                    <div class="recent-promo">
+                        <a href="t2-html-css-dom-p1.html">T2 CSS and DOM - Part 1</a>
+                    </div>
+                    <div class="recent-promo">
+                        <a href="c1-time-and-habits-blog.html">C1 Time and Habits</a>
+                    </div>
+                    <div class="recent-promo">
+                        <a href="c1-reflection-blog.html">C1 Reflection</a>
+                    </div>
+                    <div class="recent-promo ">
+                        <a href="blog-template.html"><img src="../images/PeterTorrSmithColour-100px-width.jpg" alt="alt text"></a>
+                        <h4><a href="blog-template.html">A Recent Thing</a></h4>
+                        <p>Shorter Summary/intro to Article, Blog, Project, History or Random</p>
+                    </div>
+
+
+                    <div class="show-more">
+                        <a href="#">more...</a>
+                    </div>
+
+                </div> -->
     </div>
-    </header>
+    <!-- /features -->
+    </section>
 
-    <main>
-        <section class="container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <main class="container">
+        <section class="content-index">
+
+
+            dd
             <div class="row">
                 <ul>
-                    <li> <a href="./dom-events-and-classes/">Sprint 5 Javascript Events and Classes - The first Dots
+                    <li> <a href="./dom-events-and-classes/">Sprint 5 Javascript Events and Classes - The first
+                            Dots
                             challenge</a> </li>
                 </ul>
             </div>
         </section>
     </main>
+    </div>
 
 </body>
 
