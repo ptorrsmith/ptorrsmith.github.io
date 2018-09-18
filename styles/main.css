@@ -93,9 +93,11 @@ section.features {
     max-height: 55px;
 }
 
-.content-landscape-image {
+.container .content-landscape-image {
     text-align: center;
     background-color: white;
+    margin-left: -5px;
+    margin-right: -5px;
 }
 
 nav {
@@ -272,6 +274,7 @@ aside {
     padding-top: 7px;
     padding-bottom: 7px;
     font-style: italic;
+    border-radius: 2rem;
 }
 
 aside code {
