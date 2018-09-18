@@ -42,11 +42,90 @@
 
 <body>
 
-    <h1>History landing page</h1>
 
-    <h2>Coming Soon</h2>
+    <!-- 
+            .page is full page outline
+            .blog is the section
+            .content is the content type (content, content-index, [site] index)
+         -->
+    <div class="page content-index">
+        <!-- 
+                    .section of the page structure
+                    .header and <header>. Will use .header to keep CSS class based more than html element (??)
+                    .container to allow skeleton rows and columns to flow inside container max-width
+                 -->
 
-    <a href="../index.html" class="button button-primary">Home</a>
+        <header class="section header container">
+            <div class="row page-header">
+                <div class="logo one-third column">
+                    <img src="../images/PeterTorrSmithColour-300px-width.jpg" alt="Peter Torr Smith colour photo" class="u-max-full-width logo">
+                </div>
+                <div class="site-title two-thirds column">
+                    <h1>History landing page</h1>
+                    <h3>Things worth remembering... for the present and the future</h3>
+                </div>
+            </div>
+            <nav class="row menu">
+                <!-- <h3>Menu</h3> -->
+                <ul>
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../blog/blog-index.html">Blogs</a>
+                    </li>
+                    <li>
+                        <a href="#">Projects</a>
+                    </li>
+                    <li>
+                        <a href="../random/random-index.html">Random</a>
+                    </li>
+                    <li>
+                        <a href="../history/history-index.html" class="current">History</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <section class="content-header row">
+                <div class="content-header-image">
+                    <img src="../images/FamilyTreeToErinaWharekiri.PNG" alt="The Smith-Torr-Lewis-Wharekiri Family Tree" class="u-max-full-width">
+                </div>
+
+            </section>
+
+        </header>
+
+        <section class="features container">
+            <div class="row">
+                <div class="two-thirds column latest">
+                    <h2>Latest</h2>
+                    <div class="latest-promo">
+                        <a href="#"><img src="../images/FamilyTreeToErinaWharekiri.PNG" alt="The Smith-Torr-Lewis-Wharekiri Family Tree"></a>
+                        <h4><a href="#">The Smith-Torr-Lewis-Wharekiri Family Tree</a></h4>
+                        <p>tracing back my Māori family tree...</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="one-half column recent ">
+    
+                        <h2>Recent Stuff</h2>
+    
+                        <div class="recent-promo">
+                            <a href="c2-emotional-intelligence.html">C2 Emotional Intellgence</a>
+                        </div>
+    
+                        <div class="show-more">
+                            <a href="#">more...</a>
+                        </div>
+    
+                    </div> -->
+            <!-- </div> -->
+            <!-- /features -->
+        </section>
+
+
+    </div>
 
 </body>
 
