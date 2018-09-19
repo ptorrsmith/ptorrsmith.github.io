@@ -3,7 +3,9 @@ document.addEventListener('DOMContentLoaded', startGame)
 // Define your `board` object here!
 var board = {
   cells: [
-  ]
+  ],
+  gameCount: 0,
+  wonCount: 0
 }
 
 function loadBoard(size) {
@@ -35,7 +37,7 @@ function loadSurroundingMinesCount() {
 
 function startGame() {
   // var size = prompt("Enter size 2-6", 6);
-  var size = 5;
+  var size = 4;
   loadBoard(size);
   loadSurroundingMinesCount();
 
@@ -87,6 +89,11 @@ function checkForWin() {
   }
 
   lib.displayMessage('You win!')
+  // board.gameCount++;
+  // board.wonCount++;
+
+  alert("Games: " + board.gameCount + ".  Won: " + board.wonCount);
+
 }
 
 // Define this function to count the number of mines around the cell
