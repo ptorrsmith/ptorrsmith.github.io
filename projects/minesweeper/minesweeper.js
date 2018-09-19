@@ -92,7 +92,7 @@ function checkForWin() {
   // board.gameCount++;
   // board.wonCount++;
 
-  alert("Games: " + board.gameCount + ".  Won: " + board.wonCount);
+  // alert("Games: " + board.gameCount + ".  Won: " + board.wonCount);
 
 }
 
