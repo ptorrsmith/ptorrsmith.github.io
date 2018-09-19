@@ -12,7 +12,7 @@ function loadBoard(size) {
       var cell = {
         row: i,
         col: j,
-        isMine: ((i)%2 == 0 && (j+0.5)%1.5 == 0),
+        isMine: ((i + 1) % 2 == 0 || (j + 1) % 1.5 == 0),
         hidden: true
       }
       board.cells.push(cell);
@@ -20,11 +20,25 @@ function loadBoard(size) {
   }
 }
 
+function loadSurroundingMinesCount() {
+  //loop through board cells array (array of cell objects)
+  //For each cell, call CountSurroundingMines(cell)
+  //Add that value to the surroundingMines: property of the cell object
+  var cells = board.cells;
+  for (var i = 0; i < cells.length; i++) {
+    var cell = cells[i]
+    var surroundingMines = countSurroundingMines(cell);
+    cell["surroundingMines"] = surroundingMines;
+  }
+}
 
 function startGame() {
   // var size = prompt("Enter size 2-6", 6);
   var size = 6;
   loadBoard(size);
+  loadSurroundingMinesCount();
+
+
 
   // Don't remove this function call: it makes the game work!
   lib.initBoard()
@@ -50,5 +64,17 @@ function checkForWin() {
 // It will return cell objects in an array. You should loop through 
 // them, counting the number of times `cell.isMine` is true.
 function countSurroundingMines(cell) {
+  var row = cell["row"];  // get property from object ["property"] notation
+  var col = cell.col;     // get property from object .property notation
+  var surroundingCells = getSurroundingCells(row, col); // returns array of all neighbouring cells
+  // loop through the returned array of cell objects to count their isMine property
+  var surroundingMinesCount = 0;
+  for (var i = 0; i < surroundingCells.length; i++) {
+    var cell = surroundingCells[i];
+    if (cell["isMine"]) {
+      surroundingMinesCount++;
+    }
+  }
+  return surroundingMinesCount;
 }
 
