@@ -53,12 +53,15 @@ div.hidden {
 }
 
 div.hidden.mine {
-  border: dashed 0.5px mediumslateblue;
+  /* to be removed */
+  /* border-left: dashed 1px #ccc; */
+  /* border: dashed 1px black; */
 }
 
 div.hidden.mine:hover {
-  background: no-repeat center/20% url("images/bomb.svg") lightgoldenrodyellow;
+  /* background: no-repeat center/20% url("images/bomb.svg") lightgoldenrodyellow; */
   /* background: no-repeat center/20% url("images/bomb.png") lightgoldenrodyellow; */
+  border-bottom: dashed 0.5px #aaa;
 }
 
 div.hidden:hover {
