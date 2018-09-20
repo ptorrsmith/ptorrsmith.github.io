@@ -61,6 +61,11 @@ function startGame() {
   loadBoard(size);
   loadSurroundingMinesCount();
 
+  // update the board's game count count by 1
+  board.gameCount++;
+  document.getElementById('total-games-count').innerHTML = board.gameCount;
+
+
   // start listening for mouse clicks
   // is this anywhere on the page?  Seems a bit overkill to add to "document"??
   document.addEventListener('click', checkForWin);
@@ -107,12 +112,6 @@ function showTip(tip, button) {
 }
 
 function restartGame(evt) {
-
-  // update the board's game count count by 1
-  board.gameCount++;
-  document.getElementById('total-games-count').innerHTML = board.gameCount;
-
-
   // start the game board set and load
   startGame();
 }
@@ -159,7 +158,6 @@ function checkForWin() {
     lib.displayMessage('You win!')
     board.gameOver = true;
     removeListeners()
-
 
     // increase the board's won count by 1
     board.wonCount++;
