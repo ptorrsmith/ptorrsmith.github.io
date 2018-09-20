@@ -61,6 +61,12 @@ function startGame() {
   loadBoard(size);
   loadSurroundingMinesCount();
 
+  // hide the tip
+  var tipSpan = document.getElementById('tip-1');
+  var button = document.getElementById('tip-1-button');
+
+  hideTip(tipSpan,button);
+
   // update the board's game count count by 1
   board.gameCount++;
   document.getElementById('total-games-count').innerHTML = board.gameCount;
