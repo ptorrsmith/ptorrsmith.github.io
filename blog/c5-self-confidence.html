@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- BASIC NEEDS -->
+    <meta charset="UTF-8">
+    <title>PTorr's T5 Problem Solving blog</title>
+    <meta name="author" content="Peter Torr Smith">
+    <meta name="description" content="PTorr's T5 blog on working through problems">
+
+
+    <!-- MOBILE NEEDS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- FONT -->
+    <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+
+
+    <!-- STYLES -->
+
+    <!-- Normalize and Skeleton styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <!-- Our own "Mobile First" custom styles to override as needed and set responsive styles -->
+    <link rel="stylesheet" href="../styles/main.css">
+    <!-- <link rel="stylesheet" href="../styles/debug.css"> -->
+
+
+    <!-- SCRIPTS -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+    <!-- FAVICON -->
+    <link rel="icon" href="//www.hirethings.co.nz/favicon.ico" type="image/gif">
+
+
+</head>
+
+<body>
+    <!-- 
+        .page is full page outline
+        .blog is the section
+        .content is the content type (content, content-index, [site] index)
+     -->
+    <div class="page blog content">
+        <!-- 
+            .section of the page structure
+            .header and <header>. Will use .header to keep CSS class based more than html element (??)
+            .container to allow skeleton rows and columns to flow inside container max-width
+         -->
+
+        <header class="section header container">
+            <div class="row page-header">
+                <div class="logo two columns">
+                    <img src="../images/PeterTorrSmithColour-300px-width.jpg" alt="Peter Torr Smith colour photo" class="u-max-full-width logo">
+                </div>
+                <div class="site-title ten columns">
+                    <h1>T5 Blog - Problem Solving Javascript events and DOM object classes</h1>
+                    <h4>Changing the way things on a page look by capturing user input and changing the class names in
+                        HTML elements</h4>
+                </div>
+            </div>
+            <nav class="row menu">
+                <!-- <h3>Menu</h3> -->
+                <ul>
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="blog-index.html" class="current">Blogs</a>
+                    </li>
+                    <li>
+                        <a href="../projects/projects-index.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="../random/random-index.html">Random</a>
+                    </li>
+                    <li>
+                        <a href="../history/history-index.html">History</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="container">
+            <section class="content">
+                <article>
+                    <section class="content-header row">
+                        <div class="content-header-image content-landscape-image">
+                            <img src="../images/S5-DotsChallenge.gif" alt="Javascript Dots Challenge animation" class="u-max-full-width">
+                        </div>
+                        <div class="content-header-title">
+                            <h2>Problem Solving and Javascript events and DOM Classes</h2>
+                            <h3>Responding to user input and changing the web page</h3>
+                            <h4>by: Peter Torr Smith</h4>
+                            <h4>18th September, 2018</h4>
+                            <h5 class="tag-heading">Tags/Categories</h5>
+                            <ul class="tags">
+                                <li><a href="#">blog-post</a></li>
+                                <li><a href="#">technical</a></li>
+                                <li><a href="#">EDA-core</a></li>
+                                <li><a href="#">Project</a></li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="content-body row">
+
+                        <h3>Tell your non-tech friend a story about a time you:</h3>
+                        <h4>Got blocked on a simple problem</h4>
+                        <h5> What was the problem?</h5>
+                        <p>Simple Javascript functions not being run when loading a test HTML page</p>
+
+                        <h5> What problem solving techniques did you use?</h5>
+                        <p>Debugging the Javascript as it ran (or didn't run) in the browser</p>
+                        <p>Google searches for rules on the order of Javascript link tags.</p>
+
+                        <h5> How did you feel throughout the process?</h5>
+                        <p>Good, knowing there's a reason and that I'll find it if I just work the problem.</p>
+                        <h5> What did you learn?</h5>
+                        <p>For simple Javascript files that have some functions to run or call, the script tag to link
+                            in the .js file has to be after the html tag. </p>
+                        <p>For more well structured .js files (libraries), these can go in the head tag as the .js
+                            files always wait for the document ready event before running the start() function to
+                            do things like add event listeners to the elements in the DOM.
+                        </p>
+                        <h4> Solved a problem in an elegant way </h4>
+                        <h5> What was the problem?</h5>
+                        <p>The latest Dots Challenge I felt I solved in a relatively elegant way.</p>
+                        <p>Instead of working through the sprint Javascript Dots Challenge instructions step by step, I
+                            first outlined the goals of the "game"</p>
+                        <p>I then worked through the challenge on my own without looking at the hints in the
+                            instructions.</p>
+                        <p>I came out with a working solution very similar to those outlined in the hints, so was proud
+                            of that</p>
+                        <h5> What problem solving techniques did you use?</h5>
+                        <p>Pseudocode in the form of // comments explaining what the goals and steps and mechanisms are</p>
+                        <p>Debugging the Javascript as it ran in my browser.</p>
+                        <h5> How did you feel throughout the process?</h5>
+                        <p>Relaxed knowing that the problem was not that hard and that I'd learned all these techniques
+                            before in earlier exercises.</p>
+                        <h5> What did you learn?</h5>
+                        <p>that well worded pseudocode in comments is a fantastic way to keep the code honest.... that
+                            every function or line has a purpose, and to see ways to simplify or "refactor" the code to
+                            make it simpler, more re-useable, and easier to maintain.</p>
+                        <h3>Reflect on how confident you feel using the problem solving techniques and processes</h3>
+
+                        <p>They are</p>
+                        <ul>
+                            <li>Pseudocode</li>
+                            <li>Trying something</li>
+                            <li>Rubber ducky method</li>
+                            <li>Reading error messages</li>
+                            <li>Console.logging</li>
+                            <li>Debugging</li>
+                            <li>Googling</li>
+                            <li>Asking your peers for help</li>
+                            <li>Asking coaches for help</li>
+                            <li>Improving your process with reflection</li>
+                        </ul>
+                        <p>I'm most comfortable with comment-style pseudocode, trying something, Reading error messages
+                            (often in the browser DevTools window), Searching online, and debugging.</p>
+                        <p>I'm not using console.log too often anymore as the in-browser Javascript debugging is way
+                            easier and more powerful.</p>
+                        <p>I've not had to use the Rubber Ducky method yet, but I do talk to myself ;-)</p>
+                        <p>I've not felt I've needed too much to reach out to my peers or the coaches so far, but I
+                            expect that will be essential shortly as things get more complex.</p>
+                        <p>I do think my process and proficiency are improving with reflection... both formal and
+                            informal. </p>
+                        <ul>
+                            <li> I have been capturing and posting about some experiences and learnings and research on
+                                good practice, so that has help reinforce my learnings into my practice. </li>
+                            <li> I have also been capturing random thoughts, learnings, questions, links, etc in some
+                                scrapbook / notebook files. They are not for presentation, but just to capture
+                                questions or learnings
+                                to let them ruminate or gestate as I work through the exercises, readings, examples and
+                                videos.</li>
+                        </ul>
+                        <!-- <div class="content-landscape-image">
+                            <img src="../images/ExperiencingTheRugbySept162018_sml-med.png" alt="Experiencing the rugby"
+                                class="u-max-full-width">
+                        </div> -->
+                    </section>
+
+
+                </article>
+
+
+                <aside>
+                    <div class="row">
+                        <h3>Our Sprint 5 Javascript "Dots" Challenge</h3>
+                        <p> Have go:</p>
+                        <a href="../projects/dom-events-and-classes/" class="button button-primary">Play Dot Counter</a>
+                    </div>
+                </aside>
+
+            </section>
+            <div class="related">
+                <h2>Related - Technical and other posts</h2>
+                <div class="row">
+                    <div class="related-item four columns">
+                        <a href="t3-design-to-web-blog.html"><img src="../images/wireframes/wireframe-blog-page-desktop.jpg"
+                                alt="alt text"></a>
+                        <h4><a href="t3-design-to-web-blog.html">From Design to Web</a></h4>
+                        <p>Learning Skeleton and rebuilding the blog structure.<br>
+                            Getting the semantic structure right and leveraging a basic CSS framework</p>
+                    </div>
+                    <div class="related-item four columns">
+                        <a href="t2-html-css-dom-p2.html"><img src="../images/SimpleGuideToBuildingPagesFromADesign.png"
+                                alt="alt text" class="u-max-full-width"></a>
+                        <h4><a href="t2-html-css-dom-p2.html">HTML & CSS - Part 2</a></h4>
+                        <p>Learnings of Grids, Responsive design, HTML Semantics, Bootsrap, JQuery, and more</p>
+                    </div>
+                    <div class="related-item four columns">
+                        <a href="t2-html-css-dom-p1.html"><img src="../images/SimpleGuideToBuildingPagesFromADesign.png"
+                                alt="alt text" class="u-max-full-width"></a>
+                        <h4><a href="t2-html-css-dom-p2.html">HTML & CSS - Part 1</a></h4>
+                        <p>Learnings of the DOM, HTML, CSS, Grid, Bootsrap and JQuery</p>
+                    </div>
+                </div>
+                <div class="show-more row">
+                    <a href="#">more...</a>
+                </div>
+            </div>
+        </main>
+
+        <!-- FOOTER COMMON -->
+
+        <section class="bottom-nav static bottom right container">
+            <a href="#">Back to Top</a>
+        </section>
+
+        <section class="pre-footer container">
+            <div>an optional pre-footer space</div>
+        </section>
+        <footer class="container">
+            <div class="row">
+                <div class="five columns">Peter Torr Smith</div>
+                <div class="four columns">
+                    <span class="facebook">f</span>
+                    <span class="twitter">t</span>
+                </div>
+                <div class="three columns">
+                    <!-- should this be a span or a p tag?? -->
+                    <span>&copy; 2018</span>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+</body>
+
+</html>
