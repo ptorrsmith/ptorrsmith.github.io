@@ -2,11 +2,46 @@
 <html>
 
 <head>
-  <title>Minesweeper</title>
+  <!-- BASIC NEEDS -->
+  <meta charset="UTF-8">
+  <title>Pete's Javascript Minesweeper Game</title>
+  <meta name="author" content="Peter Torr Smith">
+  <meta name="description" content="Pete's Javascript Minesweeper Game">
+
+
+  <!-- MOBILE NEEDS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <!-- FONT -->
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+
+
+  <!-- STYLES -->
+
+  <!-- Normalize and Skeleton styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+
+  <!-- Our own "Mobile First" custom styles to override as needed and set responsive styles -->
+  <link rel="stylesheet" href="../../styles/main.css">
+  <!-- <link rel="stylesheet" href="../styles/debug.css"> -->
+
   <link rel="stylesheet" href="minesweeper.css">
+  <link rel="stylesheet" href="styles.css">
+
+
+  <!-- SCRIPTS -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
   <script src="lib/tests.js"></script>
   <script src="lib/lib.js"></script>
   <script src="minesweeper.js"></script>
+
+
+  <!-- FAVICON -->
+  <link rel="icon" href="//www.hirethings.co.nz/favicon.ico" type="image/gif">
+
 </head>
 
 <body>
@@ -24,12 +59,22 @@
 
   <div id="icons"><img src="./images/bomb.svg" width="60 px" alt=""><img src="./images/mark.svg" width="60 px" alt=""></div>
   <div id="message"></div>
-  <div id="notes"></div>
+  <div id="notes">
+    <div id="tips">
+      <div class="mines-tip-1"><button class="button-primary" id="tip-1-button">Show Tip</button> <span id="tip-1"
+          class="invisible">Total
+          mines: <span class="mine-count">0</span></span> </div>
+    </div>
+  </div>
   <div class="board"></div>
-  <!-- 
-  <div class="total-games">Games played: <span class="total-games-count">0</span> </div>
-  <div class="won-games">Games won: <span class="won-games-count">0</span></div>
- -->
+  <div id="restart">
+    <div class="mines-restart"><button class="button-primary" id="restart-1-button">Restart</button></div>
+  </div>
+ 
+  <div class="total-games">Games played: <span id="total-games-count">0</span> </div>
+  <div class="won-games">Games won: <span id="won-games-count">0</span></div>
+
+ 
 </body>
 
 </html>
