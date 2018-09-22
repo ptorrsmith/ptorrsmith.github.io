@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- BASIC NEEDS -->
+    <meta charset="UTF-8">
+    <title>PTorr's C5 Self awareness and confidence blog</title>
+    <meta name="author" content="Peter Torr Smith">
+    <meta name="description" content="Peter Torr's Enspiral Dev Academy C5 Self awareness and confidence blog">
+
+
+    <!-- MOBILE NEEDS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- FONT -->
+    <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+
+
+    <!-- STYLES -->
+
+    <!-- Normalize and Skeleton styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <!-- Our own "Mobile First" custom styles to override as needed and set responsive styles -->
+    <link rel="stylesheet" href="../styles/main.css">
+    <!-- <link rel="stylesheet" href="../styles/debug.css"> -->
+
+
+    <!-- SCRIPTS -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+    <!-- FAVICON -->
+    <link rel="icon" href="//www.hirethings.co.nz/favicon.ico" type="image/gif">
+
+
+</head>
+
+<body>
+    <!-- 
+        .page is full page outline
+        .blog is the section
+        .content is the content type (content, content-index, [site] index)
+     -->
+    <div class="page blog content">
+        <!-- 
+            .section of the page structure
+            .header and <header>. Will use .header to keep CSS class based more than html element (??)
+            .container to allow skeleton rows and columns to flow inside container max-width
+         -->
+
+        <header class="section header container">
+            <div class="row page-header">
+                <div class="logo two columns">
+                    <img src="../images/PeterTorrSmithColour-300px-width.jpg" alt="Peter Torr Smith colour photo" class="u-max-full-width logo">
+                </div>
+                <div class="site-title ten columns">
+                    <h1>C5 Blog - Self awareness and confidence blog</h1>
+                    <h4><span class="works-title">Search Inside Yourself</span> Chapter 4: Mindfulness and emotional
+                        awareness to increase self-awareness and self-confidence</h4>
+                </div>
+            </div>
+            <nav class="row menu">
+                <!-- <h3>Menu</h3> -->
+                <ul>
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="blog-index.html" class="current">Blogs</a>
+                    </li>
+                    <li>
+                        <a href="../projects/projects-index.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="../random/random-index.html">Random</a>
+                    </li>
+                    <li>
+                        <a href="../history/history-index.html">History</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="container">
+            <section class="content">
+                <article>
+                    <section class="content-header row">
+                        <div class="content-header-image content-landscape-image">
+                            <img src="../images/jsCreateObjectWithPropertiesAndCollection.PNG" alt="Screnshot: creating the board object in JavaScript"
+                                class="u-max-full-width">
+                        </div>
+                        <div class="content-header-title">
+                            <h2>JavaScript Basics: Objects, Collections, Functions and Quotes</h2>
+                            <h3>And about all those brackets [], braces {} and parentheses ()</h3>
+                            <h4>by: Peter Torr Smith</h4>
+                            <h4>22nd September, 2018</h4>
+                            <h5 class="tag-heading">Tags/Categories</h5>
+                            <ul class="tags">
+                                <li><a href="#">blog-post</a></li>
+                                <li><a href="#">technical</a></li>
+                                <li><a href="#">EDA-core</a></li>
+                                <li><a href="#">javascript</a></li>
+                                <li><a href="#">javascript-arrays</a></li>
+                                <li><a href="#">javascript-objects</a></li>
+                                <li><a href="#">javascript-functions</a></li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="content-body row">
+                        <h3>Explain to a non-tech friend</h3>
+                        <h4> In the JavaScript language, describe all the use cases for each of (), [], {} ' &amp;":</h4>
+                        <p>I’m actually going to go over these in the following order, roughly:</p>
+                        <ol>
+                            <li>Ok, what's an Object?</li>
+                            <li>brackets [] - for collections of things</li>
+                            <li>braces {} - defines an “object” (thing)</li>
+                            <li>parentheses () - contains input values to pass into a function</li>
+                        </ol>
+
+                        <p>and as an <code>&lt;aside> ... &lt;/aside></code>, </p>
+                        <ul>
+                            <li>single quotes '' and double quotes "" - Well, it sorta doesn’t matter, but it does :-)</li>
+                        </ul>
+
+                        <h4>But first, what is an object?</h4>
+                        <p>In programming, an “object” is a piece of code that holds and makes available sets of
+                            information and answers about a single thing (real-world or conceptual). An object can also
+                            contain “functions” (code algorithms) that can be called as “methods” from other pieces of
+                            code in an application to then perform some other code actions on some given and / or
+                            internal data.
+                        </p>
+                        <p>An object could be a car with a make: , model: , VIN: , colour: property and value. It could
+                            have a collection of “tyres: ”, which may have 5 “tyre” objects in it, that each have their
+                            own model: , size:, and other relevant properties. <br>
+                            It could also have a method we could call to start the car if we have the keys that would
+                            invoke a function in our object’s code (e.g. myCar.start(myKeyAuthorisation))
+                        </p>
+                        <p>The JavaScript language works a lot with “objects” and collections of things. Different
+                            parts of our application code will create, load, and interact with our collections of
+                            objects, perhaps only a single object (e.g. myCar) or many at once (myCars, or
+                            myCarWishlist).
+                        </p>
+                        <p>In JavaScript, everything is an object, including simple things like the number 5, or the
+                            string of text “Sprint 6 blog”, but also a simple or complex collection, list, or “array”,
+                            of values (or other objects), and as we’ll see below, a function is also an object :-)</p>
+                        <p>We create, or declare (and optionally directly populate) objects with the instruction <code>var</code></p>
+                        <p>Simple, or “primitive” type variables like myName, or myDriverPoints only have simple
+                            constructs:
+                        </p>
+                        <p><pre><code>var myName = ‘Peter’;
+var myDriverPoints = 4567.5;
+var isCurrentMember = true;</code></pre></p>
+                        <h4>OK, now for the Square Brackets [ ... ]</h4>
+                        <p>Lists or collections, called Arrays, are created with square brackets []; </p>
+                        <p><code>Var myPreferredColours = [‘Blue’, ‘Green’, ‘Orange’];
+// Or alternatively 
+varMyTrips = []; // this creates an empty array</code></p>
+                        <h4>And now about the curly braces { ... }</h4>
+                        <p>Objects are created with curly braces {}, and will have a list of 0 or more properties and
+                            their values
+                        </p>
+                        <p><pre><code>Var myCar = {
+        licencePlateNumber: “123ABC789”,
+        colourName:	“Dark Night’s Blue”,
+        tyres: [{tyreId: 0, type: ‘pneumatic’}, {tyreId: 1, type: ‘pneumatic’}, {etc}... ],
+        startEngine: function(myKeyAuthorisation) {if (myKeyAuthorisation.isValid() {this.start();})
+    };
+    </code></pre></p>
+                    </section>
+                </article>
+
+                <aside>
+                    <div class="row">
+                        <h3>&lt;aside> - Double or Single Quotes?</h3>
+                        <p>In the above code examples (but not in my code screenshots), I have mostly used
+                            single-quotes around simple text values. But
+                            sometimes I’ve used double-quotes, for example when the colourName property had a single
+                            quote / apostrophe in its value <code>colourName:	“Dark Night’s Blue”</code>.</p>
+                        <p> JavaScript doesn’t usually care what we use, and can accept either. Some suggest good
+                            practice
+                            is to use single quotes for simple values, and double-quotes for longer text strings such
+                            as a
+                            book title. Here is a good short post on that
+                            (https://www.quora.com/What-is-the-difference-between-single-and-double-quotes-in-javascript
+                            ).
+                            <p> Sometimes in complex text string values which include double and single quotes in the
+                                text, an
+                                “escape” chacters (the backslash \ ) can be used in the text to ensure it gets treated
+                                as part
+                                of the text and not the end of the text value.</p>
+                        </p>
+                        <p>
+                            But Javascript will let you use either, so the important thing for human understanding
+                            and
+                            code maintainability is consistency, both in your own code, but with the rest of the code
+                            in an
+                            application.
+                        </p>
+
+
+
+                        <p> In reality I’m finding I prefer using double quotes everywhere. The above linked Quora post
+                            outlines a couple of good reasons why that is helpful. It seems also that JSON (JavaScript
+                            Object Notation), which is common way to pass around objects in our code and between
+                            applications, does not like single quotes.
+                        </p>
+                        <blockquote> JSON does not recognize single quotes, so be careful.
+                            <cite> JC Guerrero, SoftWare Architect </cite>
+                        </blockquote>
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                </aside>
+
+            </section>
+            <div class="related">
+                <h2>Related - Technical and other posts</h2>
+                <div class="row">
+                    <div class="related-item four columns">
+                        <a href="t3-design-to-web-blog.html"><img src="../images/wireframes/wireframe-blog-page-desktop.jpg"
+                                alt="alt text"></a>
+                        <h4><a href="t3-design-to-web-blog.html">From Design to Web</a></h4>
+                        <p>Learning Skeleton and rebuilding the blog structure.<br>
+                            Getting the semantic structure right and leveraging a basic CSS framework</p>
+                    </div>
+                    <div class="related-item four columns">
+                        <a href="t2-html-css-dom-p2.html"><img src="../images/SimpleGuideToBuildingPagesFromADesign.png"
+                                alt="alt text" class="u-max-full-width"></a>
+                        <h4><a href="t2-html-css-dom-p2.html">HTML & CSS - Part 2</a></h4>
+                        <p>Learnings of Grids, Responsive design, HTML Semantics, Bootsrap, JQuery, and more</p>
+                    </div>
+                    <div class="related-item four columns">
+                        <a href="t2-html-css-dom-p1.html"><img src="../images/SimpleGuideToBuildingPagesFromADesign.png"
+                                alt="alt text" class="u-max-full-width"></a>
+                        <h4><a href="t2-html-css-dom-p2.html">HTML & CSS - Part 1</a></h4>
+                        <p>Learnings of the DOM, HTML, CSS, Grid, Bootsrap and JQuery</p>
+                    </div>
+                </div>
+                <div class="show-more row">
+                    <a href="#">more...</a>
+                </div>
+            </div>
+        </main>
+
+        <!-- FOOTER COMMON -->
+
+        <section class="bottom-nav static bottom right container">
+            <a href="#">Back to Top</a>
+        </section>
+
+        <section class="pre-footer container">
+            <div>an optional pre-footer space</div>
+        </section>
+        <footer class="container">
+            <div class="row">
+                <div class="five columns">Peter Torr Smith</div>
+                <div class="four columns">
+                    <span class="facebook">f</span>
+                    <span class="twitter">t</span>
+                </div>
+                <div class="three columns">
+                    <!-- should this be a span or a p tag?? -->
+                    <span>&copy; 2018</span>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+</body>
+
+</html>
