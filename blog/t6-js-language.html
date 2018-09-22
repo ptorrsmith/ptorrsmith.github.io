@@ -4,9 +4,9 @@
 <head>
     <!-- BASIC NEEDS -->
     <meta charset="UTF-8">
-    <title>PTorr's C5 Self awareness and confidence blog</title>
+    <title>PTorr's T6 Blog - JavaScript Language Basics</title>
     <meta name="author" content="Peter Torr Smith">
-    <meta name="description" content="Peter Torr's Enspiral Dev Academy C5 Self awareness and confidence blog">
+    <meta name="description" content="JavaScript Basics: Objects, Collections, Functions and Quotes">
 
 
     <!-- MOBILE NEEDS -->
@@ -56,9 +56,8 @@
                     <img src="../images/PeterTorrSmithColour-300px-width.jpg" alt="Peter Torr Smith colour photo" class="u-max-full-width logo">
                 </div>
                 <div class="site-title ten columns">
-                    <h1>C5 Blog - Self awareness and confidence blog</h1>
-                    <h4><span class="works-title">Search Inside Yourself</span> Chapter 4: Mindfulness and emotional
-                        awareness to increase self-awareness and self-confidence</h4>
+                    <h1>T6 Blog - JavaScript Language Basics</h1>
+                    <h4>Objects, Collections, Functions and Quotes</h4>
                 </div>
             </div>
             <nav class="row menu">
@@ -149,25 +148,52 @@
                         <p>Simple, or “primitive” type variables like myName, or myDriverPoints only have simple
                             constructs:
                         </p>
-                        <p><pre><code>var myName = ‘Peter’;
+                        <p>
+                            <pre><code>var myName = ‘Peter’;
 var myDriverPoints = 4567.5;
-var isCurrentMember = true;</code></pre></p>
+var isCurrentMember = true;</code></pre>
+                        </p>
                         <h4>OK, now for the Square Brackets [ ... ]</h4>
                         <p>Lists or collections, called Arrays, are created with square brackets []; </p>
-                        <p><code>Var myPreferredColours = [‘Blue’, ‘Green’, ‘Orange’];
+                        <p>
+                            <pre><code>Var myPreferredColours = [‘Blue’, ‘Green’, ‘Orange’];
 // Or alternatively 
-varMyTrips = []; // this creates an empty array</code></p>
+varMyTrips = []; // this creates an empty array</code></pre>
+                        </p>
                         <h4>And now about the curly braces { ... }</h4>
                         <p>Objects are created with curly braces {}, and will have a list of 0 or more properties and
                             their values
                         </p>
-                        <p><pre><code>Var myCar = {
+                        <p>
+                            <pre><code>Var myCar = {
         licencePlateNumber: “123ABC789”,
         colourName:	“Dark Night’s Blue”,
         tyres: [{tyreId: 0, type: ‘pneumatic’}, {tyreId: 1, type: ‘pneumatic’}, {etc}... ],
         startEngine: function(myKeyAuthorisation) {if (myKeyAuthorisation.isValid() {this.start();})
     };
-    </code></pre></p>
+    </code></pre>
+                        </p>
+                        <p>You’ll notice that the last “property” called <code>startEngine</code> is defined as a
+                            method (function) that can
+                            be called, and provided a KeyAuthorisation token/id. The function then decides what to do
+                            and what results to return, in this case determining if the car should start, taking
+                            appropriate action.</p>
+                        <p>See the page header screenshote for an example in our minesweeper application:</p>
+                        <h4>And now, about those Parentheses ( ... )</h4>
+                        <p>Functions can optionally take in one or more input values, or “parameters”. So when defining
+                            and calling a function, the parentheses are used after the function name to hold these
+                            values. </p>
+                        <figure><img src="../images/jsCreateFunction.PNG" alt="Screnshot: creating a function in JavaScript"></figure>
+                        <p>So I can now address any of those properties elsewhere in this code, and the properties and
+                            collections of other objects.
+
+                        </p>
+                        <code>alert(“Plate Number “ + myCar.licencePlateNumber + “, Engine Status: “ + myCar.startEngine)</code>
+                        <p> And here in our minesweeper app:
+                        </p>
+                        <figure><img src="../images/jsLoopThroughObjectSetupBoard.PNG" alt="Screnshot: working with Objects and Arrays in JavaScript"
+                            class="u-max-full-width"></figure>
+
                     </section>
                 </article>
 
