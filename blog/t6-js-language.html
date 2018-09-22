@@ -157,24 +157,31 @@ var myDriverPoints = 4567.5;
 var isCurrentMember = true;</code></pre>
                         </p>
                         <h4>OK, now for the Square Brackets [ ... ]</h4>
-                        <p>Lists or collections, called Arrays, are created with square brackets []; </p>
+                        <p>Lists or collections, called Arrays, are created with square brackets <code>[]</code>; </p>
                         <p>
                             <pre><code>Var myPreferredColours = [‘Blue’, ‘Green’, ‘Orange’];
 // Or alternatively 
 varMyTrips = []; // this creates an empty array</code></pre>
                         </p>
                         <h4>And now about the curly braces { ... }</h4>
-                        <p>Objects are created with curly braces {}, and will have a list of 0 or more properties and
-                            their values
+                        <p>Objects are created with curly braces <code>{}</code>, and will have a list of 0 or more
+                            properties and
+                            their values (known as a name:value pair)
                         </p>
                         <p>
                             <pre><code>Var myCar = {
         licencePlateNumber: “123ABC789”,
         colourName:	“Dark Night’s Blue”,
-        tyres: [{tyreId: 0, type: ‘pneumatic’}, {tyreId: 1, type: ‘pneumatic’}, {etc}... ],
-        startEngine: function(myKeyAuthorisation) {if (myKeyAuthorisation.isValid() {this.start();})
-    };
-    </code></pre>
+        tyres: [
+                {tyreId: 0, type: ‘pneumatic’},
+                {tyreId: 1, type: ‘pneumatic’}, 
+                {etc}... 
+                ],
+        startEngine: function(myKeyAuthorisation) {
+                if (myKeyAuthorisation.isValid() {
+                this.start();
+                }
+            };</code></pre>
                         </p>
                         <p>You’ll notice that the last “property” called <code>startEngine</code> is defined as a
                             method (function) that can
@@ -182,11 +189,13 @@ varMyTrips = []; // this creates an empty array</code></pre>
                             and what results to return, in this case determining if the car should start, taking
                             appropriate action.</p>
                         <p>See the page header screenshote for an example in our minesweeper application:</p>
+
                         <h4>And now, about those Parentheses ( ... )</h4>
                         <p>Functions can optionally take in one or more input values, or “parameters”. So when defining
                             and calling a function, the parentheses are used after the function name to hold these
                             values. </p>
-                        <figure><img src="../images/jsCreateFunction.PNG" alt="Screnshot: creating a function in JavaScript"></figure>
+                        <figure><img src="../images/jsCreateFunction.PNG" alt="Screnshot: creating a function in JavaScript"
+                                class="u-max-full-width"></figure>
                         <p>So I can now address any of those properties elsewhere in this code, and the properties and
                             collections of other objects.
 
@@ -211,12 +220,13 @@ varMyTrips = []; // this creates an empty array</code></pre>
                             practice
                             is to use single quotes for simple values, and double-quotes for longer text strings such
                             as a
-                            book title. Here is a good short post on that
-                            (https://www.quora.com/What-is-the-difference-between-single-and-double-quotes-in-javascript
-                            ).
-                            <p> Sometimes in complex text string values which include double and single quotes in the
+                            book title. <a href="https://www.quora.com/What-is-the-difference-between-single-and-double-quotes-in-javascript">Here
+                                is a good short post from Quora on that</a>.
+                            <p> Sometimes in complex text string values which include double and single quotes in
+                                the
                                 text, an
-                                “escape” chacters (the backslash \ ) can be used in the text to ensure it gets treated
+                                “escape” chacters (the backslash \ ) can be used in the text to ensure it gets
+                                treated
                                 as part
                                 of the text and not the end of the text value.</p>
                         </p>
@@ -230,18 +240,20 @@ varMyTrips = []; // this creates an empty array</code></pre>
 
 
 
-                        <p> In reality I’m finding I prefer using double quotes everywhere. The above linked Quora post
-                            outlines a couple of good reasons why that is helpful. It seems also that JSON (JavaScript
+                        <p> In reality I’m finding I prefer using double quotes everywhere. <a href="https://www.quora.com/What-is-the-difference-between-single-and-double-quotes-in-javascript">
+                                The above linked Quora post</a>
+                            outlines a couple of good reasons why that is helpful. It seems also that JSON
+                            (JavaScript
                             Object Notation), which is common way to pass around objects in our code and between
                             applications, does not like single quotes.
                         </p>
-                        <blockquote> JSON does not recognize single quotes, so be careful.
+                        <blockquote>"JSON does not recognize single quotes, so be careful."</blockquote>
                             <cite> JC Guerrero, SoftWare Architect </cite>
-                        </blockquote>
+                        
 
                     </div>
                 </aside>
-<br>
+                <br>
                 <aside>
                     <div class="row">
                         <h3>Building Mine Sweeper in JavaScript</h3>
