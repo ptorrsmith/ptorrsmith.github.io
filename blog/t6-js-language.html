@@ -160,8 +160,9 @@ var isCurrentMember = true;</code></pre>
                         <p>Lists or collections, called Arrays, are created with square brackets <code>[]</code>; </p>
                         <p>
                             <pre><code>Var myPreferredColours = [‘Blue’, ‘Green’, ‘Orange’];
+
 // Or alternatively 
-varMyTrips = []; // this creates an empty array</code></pre>
+varMyTrips = []; // creates an empty array</code></pre>
                         </p>
                         <h4>And now about the curly braces { ... }</h4>
                         <p>Objects are created with curly braces <code>{}</code>, and will have a list of 0 or more
@@ -170,18 +171,19 @@ varMyTrips = []; // this creates an empty array</code></pre>
                         </p>
                         <p>
                             <pre><code>Var myCar = {
-        licencePlateNumber: “123ABC789”,
-        colourName:	“Dark Night’s Blue”,
-        tyres: [
-                {tyreId: 0, type: ‘pneumatic’},
-                {tyreId: 1, type: ‘pneumatic’}, 
-                {etc}... 
+    licencePlateNumber: “123ABC789”,
+    colourName: “Dark Night’s Blue”,
+    tyres: [
+        { tyreId: 0, type: ‘pneumatic’ },
+        { tyreId: 1, type: ‘pneumatic’ },
+        { etc }... 
                 ],
-        startEngine: function(myKeyAuthorisation) {
-                if (myKeyAuthorisation.isValid() {
-                this.start();
-                }
-            };</code></pre>
+    startEngine: function (myKeyAuthorisation) {
+        if (myKeyAuthorisation.isValid() {
+            this.start();
+        }
+    }
+};</code></pre>
                         </p>
                         <p>You’ll notice that the last “property” called <code>startEngine</code> is defined as a
                             method (function) that can
@@ -200,7 +202,9 @@ varMyTrips = []; // this creates an empty array</code></pre>
                             collections of other objects.
 
                         </p>
-                        <code>alert(“Plate Number “ + myCar.licencePlateNumber + “, Engine Status: “ + myCar.startEngine)</code>
+                        <pre><code>alert(“Plate Number “ + myCar.licencePlateNumber 
+    + “, Engine Status: “ 
+    + myCar.startEngine(myKeyAuthorisation))</code></pre>
                         <p> And here in our minesweeper app:
                         </p>
                         <figure><img src="../images/jsLoopThroughObjectSetupBoard.PNG" alt="Screnshot: working with Objects and Arrays in JavaScript"
@@ -248,8 +252,8 @@ varMyTrips = []; // this creates an empty array</code></pre>
                             applications, does not like single quotes.
                         </p>
                         <blockquote>"JSON does not recognize single quotes, so be careful."</blockquote>
-                            <cite> JC Guerrero, SoftWare Architect </cite>
-                        
+                        <cite> JC Guerrero, SoftWare Architect </cite>
+
 
                     </div>
                 </aside>
