@@ -18,26 +18,37 @@ body {
 
 
 h1   {
-    font-size: 2.4rem; 
+    font-size: 200%; 
 } /* =24px */
 
 h2 {
-    font-size: 2rem;
+    font-size: 180%;
     padding-top: 5px;
 }
 
+h3 {
+    font-size: 160%;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 140%;
+    font-weight: bold;
+}
+
 h5 {
+    font-size: 120%;
     font-weight: bold;
 }
 
 p {
-    font-size: 1.3rem;
+    /* font-size: 1.3rem; */
     margin-bottom: 1rem;
 
 }
 
 p + ul, ol {
-    font-size: 1.3rem;
+    /* font-size: 1.3rem; */
     margin-top: -1.5rem;
     padding-left: 3rem;
 }
@@ -173,13 +184,13 @@ cite {
 }
 
 .hero h3 {
-    font-size: 2rem;
+    /* font-size: 2rem; */
     display: inline-block;
     text-align: center;
 }
 
 .hero h4 {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     text-align: center;
 }
 
@@ -205,28 +216,28 @@ cite {
 }
 
 .content h2 {
-    font-size: 2.6rem;
+    /* font-size: 2.6rem; */
     font-weight: bold;
 }
 
 .content h3 {
-    font-size: 2.1rem;
+    /* font-size: 2.1rem; */
     font-weight: bold;
 }
 
 .content h4 {
-    font-size: 1.9rem;
+    /* font-size: 1.9rem; */
     font-weight: bold;
 }
 
 .content h5 {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     font-style: italic;
 }
 
 h5.tag-heading {
     display: inline;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     text-align: right;
     margin-right: 10px;
     font-style: italic;
@@ -246,7 +257,7 @@ h5.tag-heading {
 }
 
 .content .tags li a {
-    font-size: 1.1rem;
+    font-size: 80%;
     display: inline-block;
     border-radius: 10%;
     background-color: bisque;
@@ -297,7 +308,7 @@ aside {
 }
 
 code, aside code {
-    font-size: 1.1rem;
+    font-size: 70%;
     font-weight: bold;
     font-style: normal;
     
@@ -321,7 +332,7 @@ code, aside code {
 }
 
 .features h2 {
-    font-size: 2em;
+    /* font-size: 2em; */
     text-align: center;
 }
 .features img {
@@ -340,7 +351,7 @@ code, aside code {
     padding: 20px; */
 }
 .latest h4 {
-    font-size: 2.3rem;
+    /* font-size: 2.3rem; */
     display: inline;
 }
 
@@ -368,12 +379,12 @@ code, aside code {
 }
 
 .recent h2 {
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
     font-weight: 400;
 }
 
 .recent h4 {
-    font-size: 1.8rem;
+    /* font-size: 1.8rem; */
     display: inline-block;
 
 }
@@ -391,11 +402,11 @@ code, aside code {
 }
 
 .recent-promo p {
-    font-size: 1.4rem;
+    /* font-size: 1.4rem; */
 }
 
 .recent-promo h4 {
-    font-size: 1.6rem;
+    /* font-size: 1.6rem; */
     font-weight: 400;
 }
 
@@ -430,7 +441,7 @@ there.
 /* Larger than mobile */
 @media (min-width: 400px) {
     body { font-size: 1.5rem; } 
-    h1   { font-size: 2.6rem; } 
+    /* h1   { font-size: 2.6rem; }  */
     .header .logo {
         max-width: 60%;
     }
@@ -440,7 +451,7 @@ there.
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
     body { font-size: 1.7rem; } 
-    h1   { font-size: 2.8rem; } 
+    /* h1   { font-size: 2.8rem; }  */
     .header .logo {
         max-width: 100%;
     }
@@ -450,17 +461,17 @@ there.
 /* Larger than tablet */
 @media (min-width: 750px) {
     body { font-size: 1.9rem; } 
-    h1   { font-size: 3rem; } 
+    /* h1   { font-size: 3rem; }  */
 }
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
     body { font-size: 2.1rem; } 
-    h1   { font-size: 3.3rem; } 
+    /* h1   { font-size: 3.3rem; }  */
 }
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
     body { font-size: 2.4rem; } 
-    h1   { font-size: 3.8rem; } 
+    /* h1   { font-size: 3.8rem; }  */
 }
