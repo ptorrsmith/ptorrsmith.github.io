@@ -337,11 +337,13 @@ code, aside code {
 
 .features {
     /* background-color: mediumslateblue; */
+    padding-top: 10px;
 }
 
 .features h2 {
     /* font-size: 2em; */
     text-align: center;
+    font-weight: bold;
 }
 .features img {
     /* padding: 5px; */
@@ -389,6 +391,7 @@ code, aside code {
 .recent h2 {
     /* font-size: 1.5em; */
     font-weight: 400;
+    padding-top: 15px;
 }
 
 .recent h4 {
