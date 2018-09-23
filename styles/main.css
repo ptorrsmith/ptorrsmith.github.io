@@ -11,34 +11,42 @@
 
 /* SHARED  */
 
+html {
+    font-size: 40%;
+}
+
 body {
-    font-size: 1.4rem; 
+    /* fallback font-size for browsers that don't support rems */
+    /* font-size: 14px; */
+    /* but most do support rems */
+    /* font-size: 1.4rem;  */
 } /* =14px */
 
 
 
 h1   {
-    font-size: 200%; 
+    /* font-size: 2.5rem;  */
 } /* =24px */
 
 h2 {
-    font-size: 180%;
+    /* font-size: 2.3rem; */
     padding-top: 5px;
 }
 
 h3 {
-    font-size: 160%;
+    /* font-size: 2.1rem; */
     font-weight: bold;
 }
 
 h4 {
-    font-size: 140%;
+    /* font-size: 1.6rem; */
     font-weight: bold;
 }
 
 h5 {
-    font-size: 120%;
+    /* font-size: 1.5rem; */
     font-weight: bold;
+    font-style: italic;
 }
 
 p {
@@ -440,7 +448,8 @@ there.
 
 /* Larger than mobile */
 @media (min-width: 400px) {
-    body { font-size: 1.5rem; } 
+    html {font-size: 45% }
+    /* body { font-size: 1.5rem; }  */
     /* h1   { font-size: 2.6rem; }  */
     .header .logo {
         max-width: 60%;
@@ -450,7 +459,8 @@ there.
 
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
-    body { font-size: 1.7rem; } 
+    html {font-size: 48% }
+    /* body { font-size: 1.7rem; }  */
     /* h1   { font-size: 2.8rem; }  */
     .header .logo {
         max-width: 100%;
@@ -460,18 +470,21 @@ there.
 
 /* Larger than tablet */
 @media (min-width: 750px) {
-    body { font-size: 1.9rem; } 
+    html {font-size: 54% }
+    /* body { font-size: 1.9rem; }  */
     /* h1   { font-size: 3rem; }  */
 }
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
-    body { font-size: 2.1rem; } 
+    html {font-size: 59% }
+    /* body { font-size: 2.1rem; }  */
     /* h1   { font-size: 3.3rem; }  */
 }
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
-    body { font-size: 2.4rem; } 
+    html {font-size: 62.5% }
+    /* body { font-size: 2.4rem; }  */
     /* h1   { font-size: 3.8rem; }  */
 }
