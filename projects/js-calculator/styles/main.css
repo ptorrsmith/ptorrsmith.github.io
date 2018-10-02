@@ -1,13 +1,15 @@
 
 
-    html {
-        
-    }
+   html {
+       -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  }
 
     .calculator{
         display: grid;
         background: black;
-        height: 600px;
+        height: 800px;
         width: 500px;
         padding-top: 1rem;
         padding-left: 1rem;
@@ -112,7 +114,7 @@
     }
 
     .operation:focus, .percent:focus .equals:focus, .calcButton:focus {
-        border: dashed 1px gray;
+        border: dashed 2px gray;
     }
 
     #branding{
@@ -121,4 +123,8 @@
         grid-row: 7;
         grid-column: 1/5;
         padding: auto;
+    }
+
+    .logo {
+        width: 490px;
     }
