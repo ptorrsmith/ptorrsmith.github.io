@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- BASIC NEEDS -->
+    <meta charset="UTF-8">
+    <title>PTorr's T8 Blog - "Scope" and JavaScript</title>
+    <meta name="author" content="Peter Torr Smith">
+    <meta name="description" content="JavaScript and Scope">
+
+
+    <!-- MOBILE NEEDS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- FONT -->
+    <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+
+
+    <!-- STYLES -->
+
+    <!-- Normalize and Skeleton styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <!-- Our own "Mobile First" custom styles to override as needed and set responsive styles -->
+    <link rel="stylesheet" href="../styles/main.css">
+    <!-- <link rel="stylesheet" href="../styles/debug.css"> -->
+
+
+    <!-- SCRIPTS -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+    <!-- FAVICON -->
+    <link rel="icon" href="//www.hirethings.co.nz/favicon.ico" type="image/gif">
+
+
+</head>
+
+<body>
+    <!-- 
+        .page is full page outline
+        .blog is the section
+        .content is the content type (content, content-index, [site] index)
+     -->
+    <div class="page blog content">
+        <!-- 
+            .section of the page structure
+            .header and <header>. Will use .header to keep CSS class based more than html element (??)
+            .container to allow skeleton rows and columns to flow inside container max-width
+         -->
+
+        <header class="section header container">
+            <div class="row page-header">
+                <div class="logo two columns">
+                    <img src="../images/PeterTorrSmithColour-300px-width.jpg" alt="Peter Torr Smith colour photo" class="u-max-full-width logo">
+                </div>
+                <div class="site-title ten columns">
+                    <h1>T8 Blog - "Scope" and JavaScript</h1>
+                    <h4>A simple explanation</h4>
+                </div>
+            </div>
+            <nav class="row menu">
+                <!-- <h3>Menu</h3> -->
+                <ul>
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="blog-index.html" class="current">Blogs</a>
+                    </li>
+                    <li>
+                        <a href="../projects/projects-index.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="../random/random-index.html">Random</a>
+                    </li>
+                    <li>
+                        <a href="../history/history-index.html">History</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="container">
+            <section class="content">
+                <article>
+                    <section class="content-header row">
+                        <div class="content-header-image content-landscape-image">
+                            <img src="../images/jsFiddleFunctionScope.png" alt="Screnshot: A simple Javascript function in JSFiddle"
+                                class="u-max-full-width">
+                        </div>
+                        <div class="content-header-title">
+                            <h2>Scope and Javascript</h2>
+                            <h4>Functions and Variables: Global and Local scope</h4>
+                            <h5>by: Peter Torr Smith</h5>
+                            <h5>4th October, 2018</h5>
+                            <h5 class="tag-heading">Tags/Categories</h5>
+                            <ul class="tags">
+                                <li><a href="#">blog-post</a></li>
+                                <li><a href="#">technical</a></li>
+                                <li><a href="#">EDA-core</a></li>
+                                <li><a href="#">javascript</a></li>
+                                <li><a href="#">javascript-functions</a></li>
+                                <li><a href="#">javascript-variables</a></li>
+                                <li><a href="#">javascript-scope</a></li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="content-body row">
+                        <h3>Explain to a non-tech friend:</h3>
+                        <h4>What 'scope' is, and how it works in JavaScript</h4>
+                        <p>In programming (Javascript and most other languages), a variable is simply a "thing" (or
+                            Object) declared (created) with a name (e.g. "firstName") and an optional defined value
+                            (e.g. "Peter").
+                        </p>
+                        <p>Scope, in the context of computer programming, is basically the level or range of visibility
+                            that a given variable has.</p>
+                        <p>Common terms for defining scope are "local" and "global".</p>
+                        <h4>Here’s a non-programming analogy:</h4>
+                        <p>Think of it (a little bit) like comparing your local home Wi-Fi with the Cellphone coverage
+                            you have.</p>
+                        <p>Your home Wi-Fi lives inside your home/property, and is for the purposes of being available
+                            for use within your home/property. When you go into town, that Wi-Fi is no longer
+                            available. So we can say that the scope of your home Wi-Fi is "local" to your
+                            home/property.</p>
+                        <p>Your cellphone network however is created and managed outside your home, and is available to
+                            you not only when you are away from your home, but also within your home, when you are in
+                            someone else’s
+                            home, out walking in the park, or even visiting another city (in NZ). So we can say
+                            that the scope of the cellphone network is "global" (well at least within most of Aotearoa
+                            NZ), in that it is available outside and inside your home. </p>
+                        <h4>So in regards to programming?</h4>
+                        <p>In programming, application logic in code is usually broken into small chunks of code
+                            ("functions") that
+                            do specific things, instead of one big long block of code. This could be a "function" which
+                            takes a number as input and returns some text to display using the roman-character
+                            equivalent of
+                            the number provided. We could then use that function in our main application code:</p>
+                        <pre><code>// Our main application code
+    var outputText = "The current year is ";    // global scope
+    var roman2018 = myTellMeWithRomanNumeralsFunction(2018);  // global scope
+    console.log(roman2018);     // or use otherwise to display in your web application
+
+// defining a function
+    function myTellMeWithRomanNumeralsFunction(number) {
+        var romanTextValue = "";  // scope is local this only within this function
+        //  Some logic in here to determine the appropriate text value,
+        //      inside this function we can use the "local" variables "number" and "romanTextValue"
+        //      to help build-up the resulting answer.
+        romanTextValue = "MMXVIII"
+        return outputText + romanTextValue;  // e.g. "The current year is MMXVIII"
+    }  
+// end of defining the function
+</code></pre>
+
+                        <p>In the above code, a function "myTellMeWithRomanNumeralsFunction" has been defined to take
+                            an input "number", do some things, and return a value.</p>
+                        <p>Outside of the function, whilst our outer code can call the function ( <code>var roman2018 = myTellMeWithRomanNumeralsFunction(2018)</code>
+                            ) to get and assign the resulting value to the variable roman2018 ("The current year is
+                            MMXVIII"), our outer code cannot reference, use, see or change any of the functions "local"
+                            variables (ie. "number" and "romanTextValue"), as they have local scope... local only to
+                            within the function they are declared in.</p>
+                        <p>However inside the function, the function can access, use and update any "global" variables,
+                            that are defined outside that function (in this case, it can see and use the variable
+                            "outputText" as it has global scope.</p>
+
+
+
+                    </section>
+                </article>
+
+                <aside>
+                    <div class="row">
+                        <h3>&lt;aside> - Beware of relying on Global variables!</h3>
+                        <p>A point to note: It is generally not advisable for a function to rely on variables declared
+                            outside of itself. In this case, the better practice would be to have the function require
+                            two inputs... the number, and the outputText:
+                        </p>
+                        <pre><code>// Our main application code
+    var outputText = "The current year is ";
+    var roman2018 = myTellMeWithRomanNumeralsFunction(2018, outputText);
+    console.log(roman2018);   
+
+// defining a function that does not rely on global variables
+    function myTellMeWithRomanNumeralsFunction(number, textToPrefix) {
+        var romanTextValue = "";  // declared and defined at same time
+        // Some logic in here to determine the appropriate text value,
+        // 	that may use the "local" variables "number" and "romanTextValue" and "textToPrefix"
+        // 	to help build-up the resulting answer.
+    romanTextValue = "MMXVIII"
+        
+    return textToPrefix + romanTextValue;  // e.g. "The current year is MMXVIII"
+    }
+// end of defining the function</code></pre>
+
+                    </div>
+                </aside>
+                <br>
+                <aside>
+                    <div class="row">
+                        <h3>Nothing for Nothing in Roman Numerals</h3>
+                        <p>Did you know there is no equivalent for 0 (zero) in roman numerals?</p>
+                        <p>The word ‘nulla’ (latin for ‘none’) was often used :-)</p>
+                        <p>And what about handline decimals and fractions?!?!? See <a href="https://www.quora.com/How-were-decimals-and-fractions-used-in-the-Roman-numeral-system"
+                                target="_blank">this
+                                post on Quora if you're interested :-)</a></p>
+
+
+                    </div>
+                </aside>
+
+
+
+            </section>
+            <div class="related">
+                <h2>Related - Technical and other posts</h2>
+                <div class="row">
+                    <div class="related-item four columns">
+                        <a href="t6-js-language.html"><img src="../images/jsCreateObjectWithPropertiesAndCollection.PNG" alt="Screnshot: creating the board object in JavaScript"></a>
+                        <h4><a href="t6-js-language.html">T6 Blog - JavaScript Language Basics</a></h4>
+                        <p>Objects, Collections, Functions and Quotes</span></p>
+                    </div>
+
+                    <div class="related-item four columns">
+                        <a href="t5-problem-solving.html"><img src="../images/S5-DotsChallenge.gif" alt="alt text"></a>
+                        <h4><a href="t5-problem-solving.html">T5 Blog - Javascriptand classes - Problem Solving</a></h4>
+                        <p>and my first Javascript interactive game!</span></p>
+                    </div>
+                    <div class="related-item four columns">
+                        <a href="t4-javascript-basics.html"><img src="../images/FreeCodeCampFun.png" alt="JavaScript Basics"></a>
+                        <h4><a href="t4-javascript-basics.html">T4 Blog - Learning JavaScript Basics</a></h4>
+                        <p>Basic language elements, arrays, objects, looping and ternary operators</p>
+                    </div>
+                </div>
+                <div class="show-more row">
+                    <a href="#">more...</a>
+                </div>
+            </div>
+        </main>
+
+        <!-- FOOTER COMMON -->
+
+        <section class="bottom-nav static bottom right container">
+            <a href="#">Back to Top</a>
+        </section>
+
+        <section class="pre-footer container">
+            <div>an optional pre-footer space</div>
+        </section>
+        <footer class="container">
+            <div class="row">
+                <div class="five columns">Peter Torr Smith</div>
+                <div class="four columns">
+                    <span class="facebook">f</span>
+                    <span class="twitter">t</span>
+                </div>
+                <div class="three columns">
+                    <!-- should this be a span or a p tag?? -->
+                    <span>&copy; 2018</span>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+</body>
+
+</html>
