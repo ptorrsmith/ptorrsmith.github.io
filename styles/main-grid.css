@@ -70,6 +70,7 @@ header {
     grid-template-columns: 3fr 1fr;
     grid-area: header;
     background-color: cadetblue;
+    padding-left: 1em;
 }
 
 header img {
@@ -87,7 +88,7 @@ nav {
     grid-template-columns: repeat(5, minmax(40px, 500px));
     width: 70%;
     /* grid-column-gap: 0; */
-    margin-left:10px
+    margin-left:1em;
     /* grid-gap: 0; */
 
     /* justify-self: left; */
@@ -173,10 +174,11 @@ cite {
     grid-area: hero;
     /* align-content: center;
     justify-content: center; */
+    background-color: orange;
 }
 
 .hero .promo-nav {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding: 0.5rem;
     text-align: center;
 }
@@ -205,6 +207,7 @@ img {
     max-width: 100%;
     box-shadow: 5px 5px 5px gray;
     /* border-radius: 5px; */
+    text-align: center;
 }
 
 
