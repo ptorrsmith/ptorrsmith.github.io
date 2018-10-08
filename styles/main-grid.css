@@ -192,9 +192,12 @@ main {
         "latest"
         "recent"
         ; 
+    padding-left: 1em;
 }
 
-
+h1 {
+    font-size: 2.2em;
+}
 
 a {
     /* color:#c66; */
@@ -208,6 +211,8 @@ img {
     box-shadow: 5px 5px 5px gray;
     /* border-radius: 5px; */
     text-align: center;
+    margin-left: -1em;
+    /* margin-right: -1em; */
 }
 
 
@@ -217,7 +222,9 @@ img {
 
 .latest {
     grid-area: latest;
+    background-color: cornflowerblue;
 }
+
 
 .recent {
     grid-area: recent;
