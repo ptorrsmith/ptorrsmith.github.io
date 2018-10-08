@@ -64,6 +64,7 @@ header, blockquote, .hero, main, .latest, .recent, aside {
 }
 
 header {
+    margin-top:15px;
     color: white;
     /* display: grid; */
     grid-template-columns: 3fr 1fr;
@@ -82,13 +83,18 @@ header img {
 
 nav {
     grid-area: nav;
-    grid-template-columns: repeat(5, minmax(30px, 200px));
+    /* grid-template-columns: repeat(5, minmax(30px, 200px)); */
+    grid-template-columns: repeat(5, minmax(40px, 500px));
     width: 70%;
-    grid-column-gap: 0;
+    /* grid-column-gap: 0; */
     margin-left:10px
     /* grid-gap: 0; */
 
     /* justify-self: left; */
+}
+
+nav.grid {
+    grid-column-gap: 0;
 }
 
 /* nav ul { */
@@ -121,14 +127,28 @@ nav li .current {
             /* background-color: lightgray; */
 }
 
+nav p {
+    /* width: 100%; */
+    border: 1px solid cadetblue;
+    text-align: center;
+    /* padding: 10px; */
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 nav a {
     padding: 5px;
-    border: 1px solid cadetblue;
+    /* border: 1px solid cadetblue; */
     margin: 0;
 }
 
-nav a.current {
+nav p.current {
     background-color: cadetblue;
+    color: white;
+}
+
+nav p.current a {
+    /* background-color: cadetblue; */
     color: white;
 }
 
@@ -138,9 +158,13 @@ blockquote {
     box-shadow: 2px 2px 3px grey;
     background-color: beige;
     padding: 5px;
+    /* border-radius: 10px; */
+    padding-bottom: 15px;
+    margin-left: 20px;
 }
 cite {
     /* text-align: right; */
+    padding-bottom: 12px;
 }
 
 .hero {
@@ -217,9 +241,12 @@ footer {
 /* responsive progressive enhancement at breakpoints */
 
 @media (min-width: 640px) {
+    body {
+        font-size:16px;
+    }
     .page {
         max-width: 1200px;
-        grid-template-columns: 4fr 4fr 4fr;
+        /* grid-template-columns: 4fr 4fr 4fr;
         grid-template-areas: 
         "nav header header"
         "blockquote blockquote blockquote"
@@ -228,7 +255,7 @@ footer {
         "bottom-nav bottom-nav bottom-nav"
         "pre-footer pre-footer pre-footer"
         "footer footer footer"
-        ;
+        ; */
 
     }
     main {
@@ -241,7 +268,7 @@ footer {
     .hero {
         grid-template-columns: repeat(4, 1fr);
     }
-    
+/*     
     nav {
         justify-self: stretch;
     }
@@ -249,7 +276,7 @@ footer {
     nav li {
         display: block;
 
-    }
+    } */
         
     
     
