@@ -175,6 +175,9 @@ cite {
     /* align-content: center;
     justify-content: center; */
     background-color: orange;
+    box-shadow: 5px 5px 5px darkorange;
+    margin-left:5px;
+    margin-right: 8px;
 }
 
 .hero .promo-nav {
@@ -192,7 +195,7 @@ main {
         "latest"
         "recent"
         ; 
-    padding-left: 1em;
+    /* padding-left: 1em; */
 }
 
 h1 {
@@ -201,7 +204,7 @@ h1 {
 
 a {
     /* color:#c66; */
-    color: cornflowerblue;
+    color: rgb(57, 74, 228);
 	text-decoration: none;
 }
 
@@ -210,8 +213,8 @@ img {
     max-width: 100%;
     box-shadow: 5px 5px 5px gray;
     /* border-radius: 5px; */
-    text-align: center;
-    margin-left: -1em;
+    /* text-align: center; */
+    /* margin-left: -1em; */
     /* margin-right: -1em; */
 }
 
@@ -222,12 +225,23 @@ img {
 
 .latest {
     grid-area: latest;
-    background-color: cornflowerblue;
+    background-color: rgb(149, 207, 209);
+    margin-left: 5px;
+    margin-right: 8px;
+    padding-left: 5px;
+    padding-right: 8px;
+    box-shadow: 5px 5px 5px cadetblue;
 }
 
 
 .recent {
     grid-area: recent;
+    background-color: rgb(157, 190, 102);
+    margin-left: 5px;
+    margin-right: 8px;
+    padding-left: 5px;
+    padding-right: 8px;
+    box-shadow: 5px 5px 5px rgb(66, 116, 19);
 }
 
 aside {
@@ -256,16 +270,17 @@ footer {
     }
     .page {
         max-width: 1200px;
-        /* grid-template-columns: 4fr 4fr 4fr;
+        grid-template-columns: 4fr 4fr 4fr;
         grid-template-areas: 
-        "nav header header"
+        "header header header"
+        "nav nav nav"
         "blockquote blockquote blockquote"
         "hero hero hero"
         "main main main"
         "bottom-nav bottom-nav bottom-nav"
         "pre-footer pre-footer pre-footer"
         "footer footer footer"
-        ; */
+        ;
 
     }
     main {
