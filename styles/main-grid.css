@@ -1,0 +1,256 @@
+/*=======================================
+	main-grid.css
+=========================================
+
+Project	:	Pete's Sprint-9 site redesign and CSS Grid
+Source	:	https://github.com/ptorrsmith
+Author	:	Peter Torr Smith
+URL		:	ptorrsmith.github.com
+
+
+Contents:
+
+	- Housekeeping
+	- Nav Container
+	- Menu List
+	- Triggers
+	- Breakpoints
+	- Helpers
+
+=========================================
+	Housekeeping 
+=======================================*/
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: Raleway, sans-serif;
+    font-size: 12px;
+    margin: 0;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 10px;
+}
+
+.page {
+    margin: auto;
+    background-color: rgb(230, 226, 173);
+    /* display: grid; */
+    /* grid-gap: 10px; */
+    grid-template-areas: 
+        "header"
+        "nav"
+        "blockquote"
+        "hero"
+        "main"
+        /* "aside" */
+        "bottom-nav"
+        "pre-footer"
+        "footer"
+        ;
+}
+
+
+header, blockquote, .hero, main, .latest, .recent, aside {
+    /* border-radius: 5px; */
+    /* border: 2px solid gray; */
+    /* padding: 0.5rem; */
+}
+
+header {
+    color: white;
+    /* display: grid; */
+    grid-template-columns: 3fr 1fr;
+    grid-area: header;
+    background-color: cadetblue;
+}
+
+header img {
+    box-shadow: 5px 5px 5px rgb(18, 63, 65);
+    /* box-shadow: none; */
+    /* border: solid .3em white; */
+    margin: -8px;
+    margin-bottom: -90px;
+
+}
+
+nav {
+    grid-area: nav;
+    grid-template-columns: repeat(5, minmax(30px, 200px));
+    width: 70%;
+    grid-column-gap: 0;
+    margin-left:10px
+    /* grid-gap: 0; */
+
+    /* justify-self: left; */
+}
+
+/* nav ul { */
+    /* display:grid; */
+    /* grid-template-columns: repeat(auto-fit, minmax( 50px, 100px)); */
+            /* grid-template-columns: repeat(5, minmax(50px, 250px)); */
+    /* grid-template-columns: repeat(5, 1fr); */
+    /* list-style: none; */
+            /* list-style-type: none;
+            margin-block-start: 0;
+            margin-block-end: 0; */
+    /* margin-inline-start: 0px;
+    margin-inline-end: 0px; */
+            /* padding-inline-start: 0;
+            justify-items: stretch; */
+    /* margin-top: 0;
+    margin-bottom: 0; */
+/* } */
+
+nav li {
+    /* display: inline; */
+    /* margin-left: 10px;
+    margin-right: 10px; */
+    /* font-size: 1.2em;
+    font-weight: bold; */
+}
+
+nav li .current {
+    /* border: 1px solid grey; */
+            /* background-color: lightgray; */
+}
+
+nav a {
+    padding: 5px;
+    border: 1px solid cadetblue;
+    margin: 0;
+}
+
+nav a.current {
+    background-color: cadetblue;
+    color: white;
+}
+
+blockquote {
+    width: 65%;
+    grid-area: blockquote;
+    box-shadow: 2px 2px 3px grey;
+    background-color: beige;
+    padding: 5px;
+}
+cite {
+    /* text-align: right; */
+}
+
+.hero {
+    /* display: grid; */
+    grid-template-columns: repeat(2, 1fr);
+    grid-area: hero;
+    /* align-content: center;
+    justify-content: center; */
+}
+
+.hero .promo-nav {
+    border: 1px solid red;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+main {
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr; */
+    /* grid-gap: 10px; */
+    grid-area: main;
+    grid-template-areas: 
+        "latest"
+        "recent"
+        ; 
+}
+
+
+
+a {
+    /* color:#c66; */
+    color: cornflowerblue;
+	text-decoration: none;
+}
+
+
+img {
+    max-width: 100%;
+    box-shadow: 5px 5px 5px gray;
+    /* border-radius: 5px; */
+}
+
+
+/* mobile first layout */
+
+
+
+.latest {
+    grid-area: latest;
+}
+
+.recent {
+    grid-area: recent;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.bottom-nav {
+    grid-area: bottom-nav;
+}
+
+.pre-footer {
+    grid-area: pre-footer;
+}
+
+
+
+/* responsive progressive enhancement at breakpoints */
+
+@media (min-width: 640px) {
+    .page {
+        max-width: 1200px;
+        grid-template-columns: 4fr 4fr 4fr;
+        grid-template-areas: 
+        "nav header header"
+        "blockquote blockquote blockquote"
+        "hero hero hero"
+        "main main main"
+        "bottom-nav bottom-nav bottom-nav"
+        "pre-footer pre-footer pre-footer"
+        "footer footer footer"
+        ;
+
+    }
+    main {
+        grid-template-columns: 6fr 6fr;
+        grid-template-areas: 
+            "latest recent"
+            "latest recent"
+            ; 
+    }
+    .hero {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    nav {
+        justify-self: stretch;
+    }
+
+    nav li {
+        display: block;
+
+    }
+        
+    
+    
+}
