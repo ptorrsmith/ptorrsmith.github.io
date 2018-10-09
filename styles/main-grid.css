@@ -293,8 +293,24 @@ footer div {
 }
 
 .bottom-nav {
-    grid-area: bottom-nav;
-    text-align: right;
+    /* grid-area: bottom-nav; */
+    text-align: center;
+    padding-top: 0.9rem;
+    /* vertical-align: middle; */
+    position: fixed;
+    bottom: 15px;
+    right: 25px;
+    border: 1px solid cadetblue;
+    border-radius: 50%;
+    background-color: beige;
+    height: 3rem;
+    width: 3rem;
+    box-shadow: 5px 5px 10px grey;
+    opacity: 0.3;
+}
+
+.bottom-nav:hover {
+    opacity: 0.8;
 }
 
 .pre-footer {
@@ -318,7 +334,7 @@ footer div {
         "blockquote blockquote blockquote"
         "hero hero hero"
         "main main main"
-        "bottom-nav bottom-nav bottom-nav"
+        /* "bottom-nav bottom-nav bottom-nav" */
         "pre-footer pre-footer pre-footer"
         "footer footer footer"
         ;
