@@ -233,6 +233,36 @@ img {
     box-shadow: 5px 5px 5px cadetblue;
 }
 
+.latest h1, .recent h1 {
+    text-align: center;
+    font-size: 2.6rem;
+    margin: 20px;
+}
+
+.latest h2 a {
+    color: rgb(37, 65, 143);
+}
+
+.recent h2 a {
+    color: rgb(65, 97, 0);
+}
+
+.latest-promo, .recent-promo {
+    padding: 3px;
+    padding-right:6px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.latest-promo {
+    box-shadow: 3px 3px 3px cadetblue;
+    border: 1px solid rgb(33, 151, 180);
+}
+.recent-promo {
+    box-shadow: 3px 3px 3px rgb(106, 160, 95);
+    border: 1px solid rgb(97, 141, 32);
+
+}
 
 .recent {
     grid-area: recent;
@@ -249,11 +279,22 @@ aside {
 }
 
 footer {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
     grid-area: footer;
+    justify-content: stretch;
+    text-align: center;
+    background-color: cadetblue;
+    color: white;
+}
+
+footer div {
+    float: left;
 }
 
 .bottom-nav {
     grid-area: bottom-nav;
+    text-align: right;
 }
 
 .pre-footer {
