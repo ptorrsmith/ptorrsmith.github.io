@@ -69,7 +69,12 @@ header {
     /* display: grid; */
     grid-template-columns: 3fr 1fr;
     grid-area: header;
-    background-color: cadetblue;
+    background-color: cadetblue; /* if image unavailable */
+    background-image: url("../images/kowhai.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    /* margin-bottom: -50px; */
+
     padding-left: 1em;
 }
 
@@ -200,6 +205,11 @@ main {
 
 h1 {
     font-size: 2.2em;
+}
+
+header h1, header p.subtitle {
+    text-shadow: 2px 2px 15px black;
+    margin-left: 3rem;
 }
 
 a {
