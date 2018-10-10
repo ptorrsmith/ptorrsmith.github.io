@@ -31,7 +31,7 @@ body {
     /* background-image: url("../images/tulips-bkgd.jpg"); */
     background-image: url("../images/kowhai-bkgd.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     font-family: Raleway, sans-serif;
     font-size: 12px;
     margin: 0;
