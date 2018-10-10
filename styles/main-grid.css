@@ -28,10 +28,6 @@ Contents:
 
 body {
     background-color: black;
-    /* background-image: url("../images/tulips-bkgd.jpg"); */
-    background-image: url("../images/kowhai-bkgd.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
     font-family: Raleway, sans-serif;
     font-size: 12px;
     margin: 0;
@@ -340,6 +336,7 @@ footer div {
 @media (min-width: 640px) {
     body {
         font-size:16px;
+
     }
     .page {
         max-width: 1200px;
@@ -378,4 +375,14 @@ footer div {
         
     
     
+}
+
+@media (min-width: 1200px) {
+    body {
+        font-size:19px;
+        background-image: url("../images/kowhai-bkgd.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
 }
